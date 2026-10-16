@@ -9,6 +9,8 @@ layout: base.njk
 <h1>{{ heading }}</h1>
 <p class="lead">{{ intro }}</p>
 </header>
+{% if content | trim %}<div class="prose hub-body">{{ content | safe }}</div>
+<h2 class="hub-list-h">Reviews &amp; guides</h2>{% endif %}
 {% if list.length %}
 <ul class="cards">
 {% for p in list %}<li><a class="cd" href="{{ p.url }}"><div class="im {{ p.data.tone or 'a' }}" role="img" aria-label="Article image"></div><span class="tag">{{ p.data.type | capitalize }}{% if p.data.sample %} · Sample{% endif %}</span><h3>{{ p.data.title }}</h3><p>{{ p.templateContent | readTime }} min read · Updated {{ (p.data.updated or p.data.date) | dateShort }}</p></a></li>{% endfor %}
