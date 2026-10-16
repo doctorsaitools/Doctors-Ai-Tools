@@ -54,7 +54,8 @@ img,svg{display:block;max-width:100%}
 .top b{color:var(--band-ink);font-weight:600}
 nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
 .logo{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--ink);min-height:48px}
-.logo span{font-family:var(--serif);font-size:22px;font-weight:500;letter-spacing:-.015em}
+.logo span{font-family:var(--serif);font-size:24px;font-weight:600;letter-spacing:-.02em;white-space:nowrap}
+.logo i{font-style:italic;font-weight:500;color:var(--teal)}
 .links{display:flex;gap:6px;font-size:15px;font-weight:500;color:var(--ink)}
 .links a{text-decoration:none;padding:0 12px;min-height:48px;display:inline-flex;align-items:center;border-radius:999px}
 .links a:hover{background:var(--chip)}
