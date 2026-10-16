@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ title }}</title>
+<meta name="description" content="{{ description or site.description }}">
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+{% if not site.live %}<meta name="robots" content="noindex,nofollow">{% else %}<meta name="robots" content="index,follow,max-image-preview:large">{% endif %}
+<meta name="theme-color" content="#F6F3EC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A1220" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ site.name }}">
+<meta property="og:title" content="{{ title }}">
+<meta property="og:description" content="{{ description or site.description }}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:image" content="{{ site.url }}/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Doctors AI Tools — physician-reviewed AI tools for clinicians">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/fonts/fraunces-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fraunces-latin-opsz-italic.woff2" as="font" type="font/woff2" crossorigin>
+<script>try{var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<style>{{ site.css | safe }}</style>
+<script type="application/ld+json">{{ schema | dump | safe }}</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<symbol id="logo" viewBox="0 0 48 48"><circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="1.6"/><text x="22.5" y="33.5" text-anchor="middle" font-family="Fraunces,Georgia,serif" font-size="27" font-weight="500" fill="currentColor">D</text><path d="M32.2 12.5h1.6v3h3v1.6h-3v3h-1.6v-3h-3v-1.6h3z" fill="#1AA39A"/></symbol>
+<symbol id="arrow" viewBox="0 0 16 16"><path d="M3 8h10m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="check" viewBox="0 0 20 20"><circle cx="10" cy="10" r="9" fill="currentColor" opacity=".16"/><path d="m6 10.3 2.6 2.5L14 7.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+<symbol id="doc" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/></g></symbol>
+<symbol id="scan" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4"/><path d="M12 3.5v3M12 17.5v3"/></g></symbol>
+<symbol id="flask" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6M10 3v6l-5 9a2 2 0 0 0 1.8 3h10.4a2 2 0 0 0 1.8-3l-5-9V3"/></g></symbol>
+<symbol id="moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+<symbol id="sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6 7 7M17 17l1.4 1.4M5.6 18.4 7 17M17 7l1.4-1.4"/></g></symbol>
+<symbol id="menu" viewBox="0 0 24 24"><path d="M4 8h16M4 16h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+</defs></svg>
+<a class="skip" href="#main">Skip to content</a>
+{% if page.url == "/" %}<div class="top"><a href="{{ home.announce.href }}">{{ home.announce.lead }} <b>{{ home.announce.strong }}</b> {{ home.announce.rest }} →</a></div>{% endif %}
+<header>
+<div class="w">
+<nav aria-label="Primary">
+<a class="logo" href="/" aria-label="Doctors AI Tools — home"><svg width="40" height="40" style="color:var(--ink)" aria-hidden="true"><use href="#logo"/></svg><span>Doctors AI Tools</span></a>
+<div class="links">
+<a href="/ai-scribes/">AI Scribes</a><a href="/radiology-ai/">Radiology AI</a><a href="/pathology-ai/">Pathology AI</a><a href="/methodology/">How We Review</a><a href="/about/">About</a>
+</div>
+<div class="navc">
+<a class="btn p" href="#briefing">Get the briefing</a>
+<button class="tt" id="tt" type="button" aria-label="Switch between light and dark mode"><svg class="moon" aria-hidden="true"><use href="#moon"/></svg><svg class="sun" aria-hidden="true"><use href="#sun"/></svg></button>
+<details class="menu"><summary aria-label="Open menu"><svg width="22" height="22" aria-hidden="true"><use href="#menu"/></svg></summary>
+<div class="panel"><a href="/ai-scribes/">AI Scribes</a><a href="/radiology-ai/">Radiology AI</a><a href="/pathology-ai/">Pathology AI</a><a href="/methodology/">How We Review</a><a href="/about/">About</a><a href="#briefing">Get the briefing</a></div></details>
+</div>
+</nav>
+</div>
+</header>
+<main id="main">
+{{ content | safe }}
+</main>
+<footer>
+<div class="w">
+<div class="fg">
+<div><a class="logo" href="/" aria-label="Doctors AI Tools — home"><svg width="36" height="36" style="color:var(--ink)" aria-hidden="true"><use href="#logo"/></svg><span>Doctors AI Tools</span></a><p>Independent, physician-reviewed guidance on AI tools for clinicians.</p></div>
+<div><h2>Reviews</h2><ul><li><a class="l" href="/ai-scribes/">AI Scribes</a></li><li><a class="l" href="/radiology-ai/">Radiology AI</a></li><li><a class="l" href="/pathology-ai/">Pathology AI</a></li></ul></div>
+<div><h2>Trust</h2><ul><li><a class="l" href="/methodology/">How We Review</a></li><li><a class="l" href="/disclosure/">Affiliate Disclosure</a></li><li><a class="l" href="/editorial-policy/">Editorial Policy</a></li></ul></div>
+<div><h2>Company</h2><ul><li><a class="l" href="/about/">About</a></li><li><a class="l" href="/contact/">Contact</a></li><li><a class="l" href="/privacy/">Privacy</a></li></ul></div>
+</div>
+<div class="legal"><span>© {{ site.year }} DoctorsAITools.com</span><span>Information only — not medical advice. We may earn from qualifying purchases.</span></div>
+</div>
+</footer>
+<script>document.getElementById("tt").addEventListener("click",function(){var d=document.documentElement,c=d.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.setAttribute("data-theme",n);try{localStorage.setItem("theme",n)}catch(e){}})</script>
+{% if site.cfAnalyticsToken %}<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"{{ site.cfAnalyticsToken }}"}'></script>{% endif %}
+</body>
+</html>

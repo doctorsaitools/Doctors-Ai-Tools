@@ -1,0 +1,97 @@
+---
+layout: base.njk
+title: "Doctors AI Tools — Physician-Reviewed AI Tools for Doctors"
+description: "Independent, hands-on reviews of AI scribes, radiology AI and more for doctors, reviewed by a radiologist and pathologist with 50+ years in practice."
+eleventyComputed:
+  schema:
+    "@context": "https://schema.org"
+    "@graph":
+      - "@type": "Organization"
+        "@id": "https://doctorsaitools.com/#org"
+        name: "Doctors AI Tools"
+        url: "https://doctorsaitools.com"
+      - "@type": "WebSite"
+        "@id": "https://doctorsaitools.com/#site"
+        url: "https://doctorsaitools.com"
+        name: "Doctors AI Tools"
+        publisher:
+          "@id": "https://doctorsaitools.com/#org"
+        inLanguage: "en"
+      - "@type": "Person"
+        "@id": "https://doctorsaitools.com/#editor"
+        honorificPrefix: "Dr."
+        name: "Ravi Shankar Gupta"
+        honorificSuffix: "DMRE, DCP, FAGS"
+        jobTitle: "Chief Medical Editor"
+        description: "Radiologist and pathologist with 50+ years in practice; Chief Medical Editor of Doctors AI Tools."
+        worksFor:
+          "@id": "https://doctorsaitools.com/#org"
+---
+{% set ph = not site.live %}
+<div class="w">
+<section class="hero">
+<div>
+<p class="eye">Independent · Physician-reviewed</p>
+<h1>The AI tools worth a <i>doctor’s</i> time.</h1>
+<p class="lead">Every tool is tested hands-on and reviewed by a radiologist &amp; pathologist with 50+ years in practice. Honest verdicts. No paid rankings.</p>
+<div class="cta"><a class="btn p" href="/ai-scribes/">Find the best AI scribe <svg class="ic" aria-hidden="true"><use href="#arrow"/></svg></a><a class="btn s" href="/methodology/">How we review</a></div>
+<ul class="proof"><li><b>50+</b>years of clinical<br>practice behind every review</li><li><b>0</b>paid placements<br>in our rankings</li><li><b>5 min</b>to read any<br>verdict</li></ul>
+</div>
+<div class="portrait" role="img" aria-label="Portrait of {{ site.editor.name }}, {{ site.editor.title }}">
+{% if ph %}<span class="ph">PHOTO · PORTRAIT</span>{% endif %}
+<div class="badge"><div class="seal"><svg width="24" height="24" aria-hidden="true"><use href="#check"/></svg></div><div><b>{{ site.editor.name }}, {{ site.editor.credentials }}</b><small>{{ site.editor.title }} · {{ site.editor.specialty }}<br>{{ site.editor.experience }}, India</small></div></div>
+</div>
+</section>
+</div>
+
+<div class="strip"><div class="w"><ul>
+<li><svg aria-hidden="true"><use href="#check"/></svg>Tested hands-on, not from press releases</li>
+<li><svg aria-hidden="true"><use href="#check"/></svg>HIPAA, GDPR &amp; data-privacy checked</li>
+<li><svg aria-hidden="true"><use href="#check"/></svg>Real pricing, no “contact sales” guesswork</li>
+<li><svg aria-hidden="true"><use href="#check"/></svg>Updated every quarter</li>
+</ul></div></div>
+
+<section><div class="w">
+<div class="head"><div><p class="eye">Start here</p><h2>What do you want AI<br>to take off your plate?</h2></div><p>Pick your problem. We’ll show you the shortlist — and the one we’d choose.</p></div>
+<ul class="pick">
+{% for a in home.areas %}<li><a class="pc{% if a.soon %} soon{% endif %}" href="{{ a.href }}"><span class="i"><svg aria-hidden="true"><use href="#{{ a.icon }}"/></svg></span><small>{{ a.meta }}</small><h3>{{ a.title }}</h3><p>{{ a.text }}</p><span class="go">{{ a.cta }} →</span></a></li>{% endfor %}
+</ul>
+</div></section>
+
+<section class="tight"><div class="w">
+<div class="head"><div><p class="eye">Our verdict · Updated Oct 2026</p><h2>Best AI medical scribes</h2></div><p>The three we’d recommend to a colleague today. Full testing notes in each review.</p></div>
+<div class="picks">
+<div class="tr h" aria-hidden="true"><span>#</span><span>Tool</span><span>Best for</span><span>From</span><span>Score</span><span></span></div>
+<ol>
+{% for p in home.picks %}<li class="tr"><span class="rank">{{ p.rank }}</span><div class="tn"><b>{{ p.name }}</b>{% if p.badge %}<span class="chip">{{ p.badge }}</span>{% else %}<small>{{ p.note }}</small>{% endif %}</div><span class="hm">{{ p.bestFor }}</span><span class="hm">{{ p.from }}</span><span class="score">{{ p.score }}<small>/10</small></span><div class="acts"><a class="btn s" href="{{ p.review }}">Review</a><a class="btn t" href="{{ p.visit }}" rel="sponsored noopener" target="_blank">Visit site<span class="sr" style="position:absolute;left:-9999px"> (opens in new tab)</span></a></div></li>{% endfor %}
+</ol>
+<p class="disc">We may earn a commission if you sign up through our links. It never affects our scores — <a href="/disclosure/">how we stay independent</a>.</p>
+</div>
+</div></section>
+
+<section class="tight"><div class="w"><div class="ed">
+<div class="img" role="img" aria-label="{{ site.editor.name }} at work">{% if ph %}<span class="ph">PHOTO · AT WORK</span>{% endif %}</div>
+<div class="tx"><p class="eye">A note from our {{ site.editor.title }}</p>
+<blockquote>“I have watched medicine change for fifty years — from film to digital, from microscope to screen. AI is the biggest shift yet. My job is simple: <i>tell you which tools deserve your trust.</i>”</blockquote>
+<p class="sig">{{ site.editor.name }}</p><p class="cred">{{ site.editor.credentials }} · {{ site.editor.specialty }} · {{ site.editor.experience }}</p>
+<a class="btn s" href="/about/">Read his story</a></div>
+</div></div></section>
+
+<section class="tight"><div class="w">
+<div class="head"><div><p class="eye">How we review</p><h2>Four tests. No shortcuts.</h2></div><p>The same clinical rigour you’d apply to a new protocol.</p></div>
+<ol class="steps">
+{% for s in home.steps %}<li class="st"><p class="n">0{{ loop.index }}</p><h3>{{ s.title }}</h3><p>{{ s.text }}</p></li>{% endfor %}
+</ol>
+</div></section>
+
+<section class="tight"><div class="w">
+<div class="head"><div><p class="eye">Latest reviews &amp; guides</p><h2>Read in five minutes.</h2></div><a class="btn s" href="/ai-scribes/">All reviews</a></div>
+<ul class="cards">
+{% for a in home.articles %}<li><a class="cd" href="{{ a.href }}"><div class="im {{ a.tone }}" role="img" aria-label="Article image"></div><span class="tag">{{ a.tag }}</span><h3>{{ a.title }}</h3><p>{{ a.min }} min read · Reviewed by {{ site.editor.name }}</p></a></li>{% endfor %}
+</ul>
+</div></section>
+
+<section class="tight" id="briefing"><div class="w"><div class="nl">
+<div><p class="eye">The monthly briefing</p><h2>One email. The AI tools that actually matter.</h2><p>New reviews, price changes and the one tool worth trying this month. Read in two minutes.</p></div>
+<div><form action="{{ site.newsletterAction or '#' }}" method="post" target="_blank"><input type="email" name="fields[email]" placeholder="Your work email" aria-label="Your work email" autocomplete="email" required><input type="hidden" name="ml-submit" value="1"><input type="hidden" name="anticsrf" value="true"><button class="btn p" type="submit">Subscribe free</button></form><p class="fine">No spam. Unsubscribe in one click. For doctors in the US, UK, Canada &amp; Australia.</p></div>
+</div></div></section>

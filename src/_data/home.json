@@ -1,0 +1,24 @@
+{
+  "announce": { "lead": "New:", "strong": "The 2026 AI Scribe Guide", "rest": "— 12 tools, tested in real clinics", "href": "/ai-scribes/" },
+  "areas": [
+    { "icon": "doc", "meta": "12 tools reviewed", "title": "Notes & charting", "text": "AI scribes that listen to the consult and draft your notes.", "cta": "Compare AI scribes", "href": "/ai-scribes/" },
+    { "icon": "scan", "meta": "8 tools reviewed", "title": "Imaging & reporting", "text": "Radiology AI for triage, detection and faster reports.", "cta": "Compare radiology AI", "href": "/radiology-ai/" },
+    { "icon": "flask", "meta": "Coming soon", "title": "Pathology & lab", "text": "Digital pathology and slide-analysis tools.", "cta": "Notify me", "href": "#briefing", "soon": true }
+  ],
+  "picks": [
+    { "rank": 1, "name": "Scribe Tool A", "badge": "Editor's choice", "bestFor": "Busy outpatient clinics", "from": "$99 / month", "score": "9.4", "review": "#", "visit": "#" },
+    { "rank": 2, "name": "Scribe Tool B", "note": "Best value", "bestFor": "Solo practitioners", "from": "$49 / month", "score": "9.1", "review": "#", "visit": "#" },
+    { "rank": 3, "name": "Scribe Tool C", "note": "Best for hospitals", "bestFor": "Multi-specialty groups", "from": "Custom", "score": "8.8", "review": "#", "visit": "#" }
+  ],
+  "steps": [
+    { "title": "Hands-on testing", "text": "We use every tool on realistic clinical scenarios — not vendor demos." },
+    { "title": "Clinical accuracy", "text": "Output checked by our physician editor for errors that matter to patients." },
+    { "title": "Privacy & compliance", "text": "HIPAA, GDPR and data-handling verified, in plain English." },
+    { "title": "True cost", "text": "Real pricing, contract terms and hidden fees — before you book a demo." }
+  ],
+  "articles": [
+    { "tag": "AI Scribes · Review", "title": "Scribe Tool A review: worth $99 a month?", "min": 5, "tone": "a", "href": "#" },
+    { "tag": "Radiology AI · Guide", "title": "AI in radiology: what actually works in 2026", "min": 7, "tone": "b", "href": "#" },
+    { "tag": "Comparison", "title": "Tool A vs Tool B: which scribe for a solo practice?", "min": 4, "tone": "c", "href": "#" }
+  ]
+}
