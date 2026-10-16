@@ -1,0 +1,34 @@
+---
+layout: page.njk
+title: "About Doctors AI Tools — Dr. Ravi Shankar Gupta, Chief Medical Editor"
+description: "Meet Dr. Ravi Shankar Gupta, the radiologist and pathologist with 50+ years in practice who checks every review on Doctors AI Tools."
+crumb: "About"
+eyebrow: "About us"
+heading: "A physician’s view of medical AI."
+intro: "Doctors AI Tools helps clinicians choose AI tools with confidence — checked by a doctor, not a marketing team."
+eleventyComputed:
+  schema:
+    "@context": "https://schema.org"
+    "@type": "WebPage"
+    name: "About Doctors AI Tools — Dr. Ravi Shankar Gupta, Chief Medical Editor"
+    url: "https://doctorsaitools.com/about/"
+    isPartOf:
+      "@id": "https://doctorsaitools.com/#site"
+---
+{% set ph = not site.live %}
+<div class="portrait" role="img" aria-label="Portrait of {{ site.editor.name }}" style="max-width:340px;margin:0 0 28px">{% if ph %}<span class="ph">PHOTO · PORTRAIT</span>{% endif %}</div>
+
+<h2 id="editor">{{ site.editor.name }}, {{ site.editor.credentials }}</h2>
+<p><b>{{ site.editor.title }}</b> · {{ site.editor.specialty }} · {{ site.editor.experience }}</p>
+{% if ph %}<p class="status"><b>Placeholder:</b> Dr. Gupta’s biography goes here — training, years and places of practice, and why he is reviewing AI tools.</p>{% endif %}
+
+<h2 id="why">Why this site exists</h2>
+<p>AI tools for doctors multiply every month, and most reviews are written by people who have never seen a patient. Doctors AI Tools exists so a busy clinician can see an honest, plain-language verdict from a physician, with real pricing and privacy checked.</p>
+
+<h2 id="how-we-work">How we work</h2>
+<ul>
+<li>Every review is checked by our Chief Medical Editor before it is published.</li>
+<li>We tell you when a tool has not been tested yet. We do not rank until we have.</li>
+<li>We earn a commission from some links. It does not change our scores. <a href="/disclosure/">Read the disclosure</a>.</li>
+</ul>
+<p>Read our <a href="/methodology/">review methodology</a> and <a href="/editorial-policy/">editorial policy</a>, or <a href="/contact/">get in touch</a>.</p>

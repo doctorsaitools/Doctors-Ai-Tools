@@ -22,6 +22,8 @@ export default {
   // Flip to true on launch day, once real reviews, photos and partners replace the sample content.
   live: process.env.LIVE === "1" || false,
   // Paste the MailerLite embedded-form action URL here (Forms → Embedded form → copy the form 'action').
+  // Public contact email shown on /contact/ (leave empty until ready).
+  contactEmail: "",
   newsletterAction: "",
   // Cloudflare Web Analytics token (leave empty to disable).
   cfAnalyticsToken: "",

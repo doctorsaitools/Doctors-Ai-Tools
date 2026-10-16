@@ -1,0 +1,28 @@
+---
+layout: page.njk
+title: "Contact Doctors AI Tools"
+description: "Contact the Doctors AI Tools team with corrections, questions or partnership enquiries."
+crumb: "Contact"
+eyebrow: "Contact"
+heading: "Get in touch."
+intro: "Corrections, questions and partnership enquiries."
+eleventyComputed:
+  schema:
+    "@context": "https://schema.org"
+    "@type": "WebPage"
+    name: "Contact Doctors AI Tools"
+    url: "https://doctorsaitools.com/contact/"
+    isPartOf:
+      "@id": "https://doctorsaitools.com/#site"
+---
+{% if not site.live %}<p class="status"><b>Placeholder:</b> contact email address to be added before launch.</p>{% endif %}
+<h2 id="email">Email</h2>
+<p>{% if site.contactEmail %}<a href="mailto:{{ site.contactEmail }}">{{ site.contactEmail }}</a>{% else %}Contact email coming soon.{% endif %}</p>
+
+<h2 id="what">What to write to us about</h2>
+<ul>
+<li>A correction or something out of date.</li>
+<li>A tool you would like us to review.</li>
+<li>A partnership or vendor enquiry. Vendors cannot pay for reviews or rankings. See the <a href="/disclosure/">disclosure</a>.</li>
+</ul>
+<p>We cannot give medical advice.</p>
