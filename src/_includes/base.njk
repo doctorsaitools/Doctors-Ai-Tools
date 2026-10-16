@@ -6,10 +6,10 @@
 <title>{{ title }}</title>
 <meta name="description" content="{{ description or site.description }}">
 <link rel="canonical" href="{{ site.url }}{{ page.url }}">
-{% if not site.live %}<meta name="robots" content="noindex,nofollow">{% else %}<meta name="robots" content="index,follow,max-image-preview:large">{% endif %}
+{% if not site.live or noindex %}<meta name="robots" content="noindex,nofollow">{% else %}<meta name="robots" content="index,follow,max-image-preview:large">{% endif %}
 <meta name="theme-color" content="#F6F3EC" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0A1220" media="(prefers-color-scheme: dark)">
-<meta property="og:type" content="website">
+<meta property="og:type" content="{{ ogType or 'website' }}">
 <meta property="og:site_name" content="{{ site.name }}">
 <meta property="og:title" content="{{ title }}">
 <meta property="og:description" content="{{ description or site.description }}">
@@ -27,7 +27,7 @@
 <link rel="preload" href="/fonts/fraunces-latin-opsz-italic.woff2" as="font" type="font/woff2" crossorigin>
 <script>try{var t=localStorage.getItem("theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 <style>{{ site.css | safe }}</style>
-<script type="application/ld+json">{{ schema | dump | safe }}</script>
+{% if schema %}<script type="application/ld+json">{{ schema | dump | safe }}</script>{% endif %}
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
@@ -46,7 +46,7 @@
 <header>
 <div class="w">
 <nav aria-label="Primary">
-<a class="logo" href="/" aria-label="Doctors AI Tools — home"><svg width="50" height="50" style="color:var(--ink)" aria-hidden="true"><use href="#logo"/></svg><span>Doctors<i>AI</i>Tools</span></a>
+<a class="logo" href="/" aria-label="DoctorsAITools home"><svg width="50" height="50" style="color:var(--ink)" aria-hidden="true"><use href="#logo"/></svg><span>Doctors<i>AI</i>Tools</span></a>
 <div class="links">
 <a href="/ai-scribes/">AI Scribes</a><a href="/radiology-ai/">Radiology AI</a><a href="/pathology-ai/">Pathology AI</a><a href="/methodology/">How We Review</a><a href="/about/">About</a>
 </div>
@@ -65,7 +65,7 @@
 <footer>
 <div class="w">
 <div class="fg">
-<div><a class="logo" href="/" aria-label="Doctors AI Tools — home"><svg width="46" height="46" style="color:var(--ink)" aria-hidden="true"><use href="#logo"/></svg><span>Doctors<i>AI</i>Tools</span></a><p>Independent, physician-reviewed guidance on AI tools for clinicians.</p></div>
+<div><a class="logo" href="/" aria-label="DoctorsAITools home"><svg width="46" height="46" style="color:var(--ink)" aria-hidden="true"><use href="#logo"/></svg><span>Doctors<i>AI</i>Tools</span></a><p>Independent, physician-reviewed guidance on AI tools for clinicians.</p></div>
 <div><h2>Reviews</h2><ul><li><a class="l" href="/ai-scribes/">AI Scribes</a></li><li><a class="l" href="/radiology-ai/">Radiology AI</a></li><li><a class="l" href="/pathology-ai/">Pathology AI</a></li></ul></div>
 <div><h2>Trust</h2><ul><li><a class="l" href="/methodology/">How We Review</a></li><li><a class="l" href="/disclosure/">Affiliate Disclosure</a></li><li><a class="l" href="/editorial-policy/">Editorial Policy</a></li></ul></div>
 <div><h2>Company</h2><ul><li><a class="l" href="/about/">About</a></li><li><a class="l" href="/contact/">Contact</a></li><li><a class="l" href="/privacy/">Privacy</a></li></ul></div>

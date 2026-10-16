@@ -1,0 +1,21 @@
+---
+layout: base.njk
+---
+{% set list = collections.posts | byCategory(category, site.live) %}
+<div class="w hub">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li aria-current="page">{{ category }}</li></ol></nav>
+<header class="hub-head">
+<p class="eye">Physician-reviewed</p>
+<h1>{{ heading }}</h1>
+<p class="lead">{{ intro }}</p>
+</header>
+{% if list.length %}
+<ul class="cards">
+{% for p in list %}<li><a class="cd" href="{{ p.url }}"><div class="im {{ p.data.tone or 'a' }}" role="img" aria-label="Article image"></div><span class="tag">{{ p.data.type | capitalize }}{% if p.data.sample %} · Sample{% endif %}</span><h3>{{ p.data.title }}</h3><p>{{ p.templateContent | readTime }} min read · Updated {{ (p.data.updated or p.data.date) | dateShort }}</p></a></li>{% endfor %}
+</ul>
+{% else %}
+<p class="empty">Our first {{ category }} reviews are being tested now. Join the monthly briefing to get them the day they publish.</p>
+<a class="btn p" href="#briefing">Get the briefing</a>
+{% endif %}
+</div>
+{% include "newsletter.njk" %}

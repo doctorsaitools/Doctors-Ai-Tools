@@ -1,0 +1,64 @@
+---
+layout: base.njk
+---
+{% set related = collections.posts | byCategory(category, site.live) | exclude(page.url) %}
+{% set items = content | toc %}
+<article class="w post">
+<nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="{{ hubUrl }}">{{ category }}</a></li><li aria-current="page">{{ title }}</li></ol></nav>
+
+<header class="post-head">
+<p class="eye">{{ category }} · {{ type | capitalize }}</p>
+<h1>{{ title }}</h1>
+{% if description %}<p class="lead">{{ description }}</p>{% endif %}
+<div class="byline">
+<span class="seal" aria-hidden="true"><svg width="30" height="30" style="color:var(--ink)"><use href="#logo"/></svg></span>
+<p><span class="who">Medically reviewed by <b>{{ site.editor.name }}</b>, {{ site.editor.credentials }}</span><span class="meta"><time datetime="{{ (updated or date) | dateISO }}">Updated {{ (updated or date) | dateShort }}</time> · {{ content | readTime }} min read</span></p>
+</div>
+<p class="disclose">We may earn a commission if you buy through our links. It never changes our scores. <a href="/disclosure/">How we stay independent</a></p>
+</header>
+
+{% if sample %}<p class="sample"><b>Sample only.</b> This page shows the layout of a finished {{ type }}. The names, scores and text are placeholders.</p>{% endif %}
+
+{% if type == "review" %}
+<section class="verdict" aria-label="Our verdict">
+<div class="vscore"><b>{{ score }}</b><small>/10</small><span>Our score</span></div>
+<div class="vbody">
+<h2>The short version</h2>
+<p>{{ verdict }}</p>
+<dl class="facts"><div><dt>Best for</dt><dd>{{ bestFor }}</dd></div><div><dt>Pricing</dt><dd>{{ pricing }}</dd></div></dl>
+</div>
+<div class="proscons">
+<div><h3>What we liked</h3><ul class="pro">{% for i in pros %}<li>{{ i }}</li>{% endfor %}</ul></div>
+<div><h3>What to know</h3><ul class="con">{% for i in cons %}<li>{{ i }}</li>{% endfor %}</ul></div>
+</div>
+{% if affiliateUrl %}<div class="vcta"><a class="btn t" href="{{ affiliateUrl }}" rel="sponsored noopener" target="_blank">Visit {{ tool }}<span class="sr"> (opens in a new tab)</span></a></div>{% endif %}
+</section>
+{% endif %}
+
+<div class="post-grid">
+{% if items.length %}<aside class="toc"><nav aria-label="On this page"><details open><summary>On this page</summary><ol>{% for i in items %}<li><a href="#{{ i.id }}">{{ i.text }}</a></li>{% endfor %}</ol></details></nav></aside>{% endif %}
+<div class="prose">
+{{ content | safe }}
+</div>
+</div>
+
+<section class="author" aria-labelledby="trust-h">
+<span class="seal" aria-hidden="true"><svg width="44" height="44" style="color:var(--ink)"><use href="#logo"/></svg></span>
+<div>
+<p class="eye">Why you can trust this</p>
+<h2 id="trust-h">Reviewed by {{ site.editor.name }}</h2>
+<p>{{ site.editor.credentials }} · {{ site.editor.specialty }} · {{ site.editor.experience }}. Every review is checked by him before it is published. <a href="/methodology/">See how we review</a></p>
+</div>
+</section>
+</article>
+
+{% if related.length %}
+<section class="tight"><div class="w">
+<div class="head"><div><p class="eye">Keep reading</p><h2>More in {{ category }}</h2></div></div>
+<ul class="cards">
+{% for p in related | head(3) %}<li><a class="cd" href="{{ p.url }}"><div class="im {{ p.data.tone or 'a' }}" role="img" aria-label="Article image"></div><span class="tag">{{ p.data.category }} · {{ p.data.type | capitalize }}</span><h3>{{ p.data.title }}</h3><p>{{ p.templateContent | readTime }} min read</p></a></li>{% endfor %}
+</ul>
+</div></section>
+{% endif %}
+
+{% include "newsletter.njk" %}
