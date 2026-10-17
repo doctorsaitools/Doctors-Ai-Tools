@@ -6,14 +6,13 @@ type: guide
 keyword: diga directory germany list
 date: 2026-10-18
 updated: 2026-10-18
-reviewed: false
-preview: true
-reviewedOn:
+reviewed: true
+reviewedOn: 2026-10-18
 tone: c
 ---
 In Germany, doctors can prescribe approved health apps and statutory health insurance pays for them. These apps are called DiGA (Digitale Gesundheitsanwendungen, digital health applications), and the federal drugs and devices institute, BfArM, keeps the official directory. We copied it on 18 October 2026 and turned it into five datasets you can read here and download as CSV files. Every figure is a count of entries in the directory, or a figure worked out from those entries.
 
-**Status: data from the BfArM directory, not yet reviewed by Dr. Gupta.** The directory holds 82 entries: 63 apps listed today and 19 that have been removed.
+**Status: data from the BfArM directory, reviewed by Dr. Gupta.** The directory holds 82 entries: 63 apps listed today and 19 that have been removed.
 
 **These are digital health apps, not AI devices.** The directory does not say whether an app uses artificial intelligence, and we do not guess. We include it because it is an official public record of digital tools doctors can prescribe and insurers pay for.
 
@@ -29,19 +28,19 @@ In Germany, doctors can prescribe approved health apps and statutory health insu
 
 ## Dataset 1: permanent and provisional listings
 
-<div class="ds-card"><h3>Listed apps by status</h3><p class="ds-sub">All 63 apps listed on 18 October 2026</p><ul class="ds-bars"><li><span class="l">Permanent</span><span class="t"><i style="--w:100.0%"></i></span><span class="v">50</span></li><li><span class="l">Provisional</span><span class="t"><i style="--w:26.0%"></i></span><span class="v">13</span></li></ul><a class="ds-dl" href="/data/de-diga-by-status.csv">de-diga-by-status.csv</a></div>
+<div class="ds-card"><h3>Listed apps by status</h3><p class="ds-sub">All 63 apps listed on 18 October 2026</p><ul class="ds-bars"><li><span class="l">Permanent</span><span class="t"><i style="--w:100.0%"></i></span><span class="v">50</span></li><li><span class="l">Provisional</span><span class="t"><i style="--w:26.0%"></i></span><span class="v">13</span></li></ul><a class="ds-dl" href="/data/germany-diga-by-status.csv">germany-diga-by-status.csv</a></div>
 
 79.4% of listed apps are permanent. The provisional 13 are spread across urology, women's health, ADHD, dementia, back and shoulder pain, depression and blood pressure.
 
 ## Dataset 2: conditions
 
-<div class="ds-card"><h3>Listed apps by ICD-10 chapter</h3><p class="ds-sub">Chapter of the first code shown for each app</p><ul class="ds-bars"><li><span class="l">Mental and behavioural (F)</span><span class="t"><i style="--w:100.0%"></i></span><span class="v">30</span></li><li><span class="l">Genitourinary (N)</span><span class="t"><i style="--w:33.3%"></i></span><span class="v">10</span></li><li><span class="l">Musculoskeletal (M)</span><span class="t"><i style="--w:23.3%"></i></span><span class="v">7</span></li><li><span class="l">Endocrine and metabolic (E)</span><span class="t"><i style="--w:16.7%"></i></span><span class="v">5</span></li><li><span class="l">Cancer (C)</span><span class="t"><i style="--w:6.7%"></i></span><span class="v">2</span></li><li><span class="l">Circulatory (I)</span><span class="t"><i style="--w:6.7%"></i></span><span class="v">2</span></li><li><span class="l">Ear (H)</span><span class="t"><i style="--w:6.7%"></i></span><span class="v">2</span></li><li><span class="l">Nervous system (G)</span><span class="t"><i style="--w:6.7%"></i></span><span class="v">2</span></li><li><span class="l">Digestive (K)</span><span class="t"><i style="--w:3.3%"></i></span><span class="v">1</span></li><li><span class="l">Factors influencing health (Z)</span><span class="t"><i style="--w:3.3%"></i></span><span class="v">1</span></li><li><span class="l">Symptoms and signs (R)</span><span class="t"><i style="--w:3.3%"></i></span><span class="v">1</span></li></ul><a class="ds-dl" href="/data/de-diga-by-icd-chapter.csv">de-diga-by-icd-chapter.csv</a></div>
+<div class="ds-card"><h3>Listed apps by ICD-10 chapter</h3><p class="ds-sub">Chapter of the first code shown for each app</p><ul class="ds-bars"><li><span class="l">Mental and behavioural (F)</span><span class="t"><i style="--w:100.0%"></i></span><span class="v">30</span></li><li><span class="l">Genitourinary (N)</span><span class="t"><i style="--w:33.3%"></i></span><span class="v">10</span></li><li><span class="l">Musculoskeletal (M)</span><span class="t"><i style="--w:23.3%"></i></span><span class="v">7</span></li><li><span class="l">Endocrine and metabolic (E)</span><span class="t"><i style="--w:16.7%"></i></span><span class="v">5</span></li><li><span class="l">Cancer (C)</span><span class="t"><i style="--w:6.7%"></i></span><span class="v">2</span></li><li><span class="l">Circulatory (I)</span><span class="t"><i style="--w:6.7%"></i></span><span class="v">2</span></li><li><span class="l">Ear (H)</span><span class="t"><i style="--w:6.7%"></i></span><span class="v">2</span></li><li><span class="l">Nervous system (G)</span><span class="t"><i style="--w:6.7%"></i></span><span class="v">2</span></li><li><span class="l">Digestive (K)</span><span class="t"><i style="--w:3.3%"></i></span><span class="v">1</span></li><li><span class="l">Factors influencing health (Z)</span><span class="t"><i style="--w:3.3%"></i></span><span class="v">1</span></li><li><span class="l">Symptoms and signs (R)</span><span class="t"><i style="--w:3.3%"></i></span><span class="v">1</span></li></ul><a class="ds-dl" href="/data/germany-diga-by-icd-chapter.csv">germany-diga-by-icd-chapter.csv</a></div>
 
 Mental and behavioural conditions dominate: 30 of 63 apps (47.6%). Depression, anxiety and panic, insomnia, ADHD, eating disorders, smoking and alcohol all have apps. Genitourinary conditions come next with 10, including incontinence, endometriosis, menopause and period pain. Musculoskeletal conditions have 7.
 
 ## Dataset 3: prices
 
-<div class="ds-card"><h3>Median manufacturer's price by status</h3><p class="ds-sub">62 apps with one price shown</p><ul class="ds-bars"><li><span class="l">Provisional</span><span class="t"><i style="--w:100.0%"></i></span><span class="v">€595</span></li><li><span class="l">Permanent</span><span class="t"><i style="--w:38.9%"></i></span><span class="v">€231</span></li></ul><a class="ds-dl" href="/data/de-diga-by-status.csv">de-diga-by-status.csv</a></div>
+<div class="ds-card"><h3>Median manufacturer's price by status</h3><p class="ds-sub">62 apps with one price shown</p><ul class="ds-bars"><li><span class="l">Provisional</span><span class="t"><i style="--w:100.0%"></i></span><span class="v">€595</span></li><li><span class="l">Permanent</span><span class="t"><i style="--w:38.9%"></i></span><span class="v">€231</span></li></ul><a class="ds-dl" href="/data/germany-diga-by-status.csv">germany-diga-by-status.csv</a></div>
 
 | Status | Apps with a price | Median | Lowest | Highest |
 |---|---|---|---|---|
@@ -56,7 +55,7 @@ The median provisional app is priced at more than twice the median permanent one
 
 38 manufacturers make the 63 listed apps. 10 make more than one.
 
-<div class="ds-card"><h3>Manufacturers with more than one listed app</h3><p class="ds-sub">Names as shown in the directory</p><ul class="ds-bars"><li><span class="l">GAIA AG</span><span class="t"><i style="--w:100.0%"></i></span><span class="v">8</span></li><li><span class="l">GET.ON Institut für Online Gesundheitstrainings GmbH</span><span class="t"><i style="--w:75.0%"></i></span><span class="v">6</span></li><li><span class="l">Endo Health GmbH</span><span class="t"><i style="--w:50.0%"></i></span><span class="v">4</span></li><li><span class="l">Selfapy GmbH</span><span class="t"><i style="--w:50.0%"></i></span><span class="v">4</span></li><li><span class="l">Kranus Health GmbH</span><span class="t"><i style="--w:37.5%"></i></span><span class="v">3</span></li><li><span class="l">Elona Health GmbH</span><span class="t"><i style="--w:25.0%"></i></span><span class="v">2</span></li><li><span class="l">IVPNetworks GmbH</span><span class="t"><i style="--w:25.0%"></i></span><span class="v">2</span></li><li><span class="l">Mindable Health GmbH</span><span class="t"><i style="--w:25.0%"></i></span><span class="v">2</span></li><li><span class="l">Oviva AG (Zweigniederlassung Deutschland)</span><span class="t"><i style="--w:25.0%"></i></span><span class="v">2</span></li><li><span class="l">PrehApp GmbH</span><span class="t"><i style="--w:25.0%"></i></span><span class="v">2</span></li></ul><a class="ds-dl" href="/data/de-diga-listed.csv">de-diga-listed.csv</a></div>
+<div class="ds-card"><h3>Manufacturers with more than one listed app</h3><p class="ds-sub">Names as shown in the directory</p><ul class="ds-bars"><li><span class="l">GAIA AG</span><span class="t"><i style="--w:100.0%"></i></span><span class="v">8</span></li><li><span class="l">GET.ON Institut für Online Gesundheitstrainings GmbH</span><span class="t"><i style="--w:75.0%"></i></span><span class="v">6</span></li><li><span class="l">Endo Health GmbH</span><span class="t"><i style="--w:50.0%"></i></span><span class="v">4</span></li><li><span class="l">Selfapy GmbH</span><span class="t"><i style="--w:50.0%"></i></span><span class="v">4</span></li><li><span class="l">Kranus Health GmbH</span><span class="t"><i style="--w:37.5%"></i></span><span class="v">3</span></li><li><span class="l">Elona Health GmbH</span><span class="t"><i style="--w:25.0%"></i></span><span class="v">2</span></li><li><span class="l">IVPNetworks GmbH</span><span class="t"><i style="--w:25.0%"></i></span><span class="v">2</span></li><li><span class="l">Mindable Health GmbH</span><span class="t"><i style="--w:25.0%"></i></span><span class="v">2</span></li><li><span class="l">Oviva AG (Zweigniederlassung Deutschland)</span><span class="t"><i style="--w:25.0%"></i></span><span class="v">2</span></li><li><span class="l">PrehApp GmbH</span><span class="t"><i style="--w:25.0%"></i></span><span class="v">2</span></li></ul><a class="ds-dl" href="/data/germany-diga-listed.csv">germany-diga-listed.csv</a></div>
 
 4 listed apps come from makers outside Germany: ACTICORE1 (Switzerland), edupression.com (Austria), Untire (Netherlands), Vitadio (Czech Republic). The full list of 63 apps, with status, first ICD-10 code, platforms, price and requirements, is in the CSV.
 
@@ -66,7 +65,7 @@ On platforms, 15 apps run only in a web browser, 35 only as iOS and Android apps
 
 19 apps have been removed from the directory. The directory shows a removal date for each and, for two, a reason.
 
-<div class="ds-card"><h3>Apps removed by year</h3><p class="ds-sub">Year of the removal date shown</p><ul class="ds-bars"><li><span class="l">2022</span><span class="t"><i style="--w:71.4%"></i></span><span class="v">5</span></li><li><span class="l">2023</span><span class="t"><i style="--w:14.3%"></i></span><span class="v">1</span></li><li><span class="l">2024</span><span class="t"><i style="--w:42.9%"></i></span><span class="v">3</span></li><li><span class="l">2025</span><span class="t"><i style="--w:100.0%"></i></span><span class="v">7</span></li><li><span class="l">2026</span><span class="t"><i style="--w:42.9%"></i></span><span class="v">3</span></li></ul><a class="ds-dl" href="/data/de-diga-removed-by-year.csv">de-diga-removed-by-year.csv</a></div>
+<div class="ds-card"><h3>Apps removed by year</h3><p class="ds-sub">Year of the removal date shown</p><ul class="ds-bars"><li><span class="l">2022</span><span class="t"><i style="--w:71.4%"></i></span><span class="v">5</span></li><li><span class="l">2023</span><span class="t"><i style="--w:14.3%"></i></span><span class="v">1</span></li><li><span class="l">2024</span><span class="t"><i style="--w:42.9%"></i></span><span class="v">3</span></li><li><span class="l">2025</span><span class="t"><i style="--w:100.0%"></i></span><span class="v">7</span></li><li><span class="l">2026</span><span class="t"><i style="--w:42.9%"></i></span><span class="v">3</span></li></ul><a class="ds-dl" href="/data/germany-diga-removed-by-year.csv">germany-diga-removed-by-year.csv</a></div>
 
 | App | Removed | Reason shown |
 |---|---|---|
@@ -90,7 +89,7 @@ On platforms, 15 apps run only in a web browser, 35 only as iOS and Android apps
 | Uroletics | 2026-03-23 | — |
 | Una Health für Diabetes | 2026-09-28 | Decision of the Hamburg Higher Social Court |
 
-Download the full table: <a class="ds-dl" href="/data/de-diga-removed.csv">de-diga-removed.csv</a>. The directory shows no reason for 17 of the 19 removals, so we do not suggest one.
+Download the full table: <a class="ds-dl" href="/data/germany-diga-removed.csv">germany-diga-removed.csv</a>. The directory shows no reason for 17 of the 19 removals, so we do not suggest one.
 
 ## What this means for doctors
 
@@ -103,11 +102,11 @@ If you practise in Germany, these are apps you can prescribe today, and the dire
 
 If you practise elsewhere, the directory is still worth knowing. It is an official, public record of which digital therapies one health system has agreed to pay for, and which it has stopped paying for.
 
-<div class="callout"><b>Dr. Gupta's note.</b> Dr. Gupta's note will appear here after his review.</div>
+<div class="callout"><b>Dr. Gupta's note.</b> I have read this page. It counts apps in Germany's official directory of health apps that doctors can prescribe. These are digital health apps, and the directory does not say whether any of them use AI. A provisional listing means the evidence of benefit is still being gathered. Check the status and what the app requires of you and the patient before you prescribe.</div>
 
 ## Related datasets
 
-For AI medical devices specifically, see our datasets for [the United States](/fda-ai-devices-datasets-us/), [Australia](/au-tga-ai-devices-datasets/) and [Japan](/jp-ai-medical-devices-datasets/).
+For AI medical devices specifically, see our datasets for [the United States](/united-states-fda-ai-devices-datasets/), [Australia](/australia-tga-ai-devices-datasets/) and [Japan](/japan-ai-medical-devices-datasets/).
 
 ## Sources
 

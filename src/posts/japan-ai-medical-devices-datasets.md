@@ -6,14 +6,13 @@ type: guide
 keyword: japan approved ai medical devices
 date: 2026-10-18
 updated: 2026-10-18
-reviewed: false
-preview: true
-reviewedOn:
+reviewed: true
+reviewedOn: 2026-10-18
 tone: c
 ---
 Japan's medical device review agency, the Pharmaceuticals and Medical Devices Agency (PMDA), publishes a table of approved medical software that uses artificial intelligence. We took the version dated end of September 2024 and turned it into four datasets you can read here and download as CSV files. Every figure is a count of rows in that table, or a percentage worked out from those counts.
 
-**Status: data from the PMDA table, not yet reviewed by Dr. Gupta.** The table lists 41 products approved between 2018 and 2024. We copied it on 18 October 2026.
+**Status: data from the PMDA table, reviewed by Dr. Gupta.** The table lists 41 products approved between 2018 and 2024. We copied it on 18 October 2026.
 
 <div class="ds-keys"><div class="ds-key"><b>41</b><span>AI medical software products in the official table</span></div><div class="ds-key"><b>23</b><span>companies holding the approvals</span></div><div class="ds-key"><b>14</b><span>products that read endoscopy images</span></div><div class="ds-key"><b>5</b><span>COVID-19 pneumonia tools on CT, approved 2020–2022</span></div></div>
 
@@ -27,7 +26,7 @@ Japan's medical device review agency, the Pharmaceuticals and Medical Devices Ag
 
 ## Dataset 1: approvals by year
 
-<div class="ds-card"><h3>Products by year of first approval</h3><p class="ds-sub">2018 to September 2024 (2024 is a part year)</p><ul class="ds-bars"><li><span class="l">2018</span><span class="t"><i style="--w:9.1%"></i></span><span class="v">1</span></li><li><span class="l">2019</span><span class="t"><i style="--w:18.2%"></i></span><span class="v">2</span></li><li><span class="l">2020</span><span class="t"><i style="--w:100.0%"></i></span><span class="v">11</span></li><li><span class="l">2021</span><span class="t"><i style="--w:54.5%"></i></span><span class="v">6</span></li><li><span class="l">2022</span><span class="t"><i style="--w:45.5%"></i></span><span class="v">5</span></li><li><span class="l">2023</span><span class="t"><i style="--w:45.5%"></i></span><span class="v">5</span></li><li><span class="l">2024</span><span class="t"><i style="--w:100.0%"></i></span><span class="v">11</span></li></ul><a class="ds-dl" href="/data/jp-ai-devices-by-year.csv">jp-ai-devices-by-year.csv</a></div>
+<div class="ds-card"><h3>Products by year of first approval</h3><p class="ds-sub">2018 to September 2024 (2024 is a part year)</p><ul class="ds-bars"><li><span class="l">2018</span><span class="t"><i style="--w:9.1%"></i></span><span class="v">1</span></li><li><span class="l">2019</span><span class="t"><i style="--w:18.2%"></i></span><span class="v">2</span></li><li><span class="l">2020</span><span class="t"><i style="--w:100.0%"></i></span><span class="v">11</span></li><li><span class="l">2021</span><span class="t"><i style="--w:54.5%"></i></span><span class="v">6</span></li><li><span class="l">2022</span><span class="t"><i style="--w:45.5%"></i></span><span class="v">5</span></li><li><span class="l">2023</span><span class="t"><i style="--w:45.5%"></i></span><span class="v">5</span></li><li><span class="l">2024</span><span class="t"><i style="--w:100.0%"></i></span><span class="v">11</span></li></ul><a class="ds-dl" href="/data/japan-ai-devices-by-year.csv">japan-ai-devices-by-year.csv</a></div>
 
 The first product in the table, EndoBRAIN, was approved in December 2018 to help tell neoplastic from non-neoplastic colorectal lesions on endoscopy. In 2020, 11 products were approved, 2 of them COVID-19 pneumonia tools. The first nine months of 2024 matched that with 11.
 
@@ -45,7 +44,7 @@ The first product in the table, EndoBRAIN, was approved in December 2018 to help
 
 This grouping is ours. We sorted each product by the kind of data it analyses, using the table's own description. The full list in Dataset 4 shows how we placed each one.
 
-<div class="ds-card"><h3>Products by input data</h3><p class="ds-sub">All 41 products; our grouping from the table's descriptions</p><ul class="ds-bars"><li><span class="l">GI endoscopy</span><span class="t"><i style="--w:100.0%"></i></span><span class="v">12</span></li><li><span class="l">CT</span><span class="t"><i style="--w:75.0%"></i></span><span class="v">9</span></li><li><span class="l">Chest X-ray</span><span class="t"><i style="--w:50.0%"></i></span><span class="v">6</span></li><li><span class="l">ECG</span><span class="t"><i style="--w:25.0%"></i></span><span class="v">3</span></li><li><span class="l">Pulse or motion sensors</span><span class="t"><i style="--w:25.0%"></i></span><span class="v">3</span></li><li><span class="l">Ultrasound</span><span class="t"><i style="--w:25.0%"></i></span><span class="v">3</span></li><li><span class="l">Surgical endoscopy</span><span class="t"><i style="--w:16.7%"></i></span><span class="v">2</span></li><li><span class="l">Dental X-ray</span><span class="t"><i style="--w:8.3%"></i></span><span class="v">1</span></li><li><span class="l">MRI</span><span class="t"><i style="--w:8.3%"></i></span><span class="v">1</span></li><li><span class="l">Throat camera images</span><span class="t"><i style="--w:8.3%"></i></span><span class="v">1</span></li></ul><a class="ds-dl" href="/data/jp-ai-devices-by-input.csv">jp-ai-devices-by-input.csv</a></div>
+<div class="ds-card"><h3>Products by input data</h3><p class="ds-sub">All 41 products; our grouping from the table's descriptions</p><ul class="ds-bars"><li><span class="l">GI endoscopy</span><span class="t"><i style="--w:100.0%"></i></span><span class="v">12</span></li><li><span class="l">CT</span><span class="t"><i style="--w:75.0%"></i></span><span class="v">9</span></li><li><span class="l">Chest X-ray</span><span class="t"><i style="--w:50.0%"></i></span><span class="v">6</span></li><li><span class="l">ECG</span><span class="t"><i style="--w:25.0%"></i></span><span class="v">3</span></li><li><span class="l">Pulse or motion sensors</span><span class="t"><i style="--w:25.0%"></i></span><span class="v">3</span></li><li><span class="l">Ultrasound</span><span class="t"><i style="--w:25.0%"></i></span><span class="v">3</span></li><li><span class="l">Surgical endoscopy</span><span class="t"><i style="--w:16.7%"></i></span><span class="v">2</span></li><li><span class="l">Dental X-ray</span><span class="t"><i style="--w:8.3%"></i></span><span class="v">1</span></li><li><span class="l">MRI</span><span class="t"><i style="--w:8.3%"></i></span><span class="v">1</span></li><li><span class="l">Throat camera images</span><span class="t"><i style="--w:8.3%"></i></span><span class="v">1</span></li></ul><a class="ds-dl" href="/data/japan-ai-devices-by-input.csv">japan-ai-devices-by-input.csv</a></div>
 
 35 of the 41 products (85.4%) analyse images. Endoscopy leads, with 12 products for the digestive tract and 2 that highlight anatomy during surgery. All 9 CT products work on the chest or abdomen, and 5 of them were built for COVID-19 pneumonia. The 3 sensor programs are Apple's: irregular rhythm notification, atrial fibrillation history and sleep apnoea notification.
 
@@ -53,13 +52,13 @@ This grouping is ours. We sorted each product by the kind of data it analyses, u
 
 23 companies hold the 41 approvals. 7 hold more than one; the other 16 hold one each.
 
-<div class="ds-card"><h3>Companies with more than one product</h3><p class="ds-sub">English names; Japanese names as listed are in the CSV</p><ul class="ds-bars"><li><span class="l">Fujifilm</span><span class="t"><i style="--w:100.0%"></i></span><span class="v">7</span></li><li><span class="l">Cybernet Systems</span><span class="t"><i style="--w:71.4%"></i></span><span class="v">5</span></li><li><span class="l">LPixel</span><span class="t"><i style="--w:57.1%"></i></span><span class="v">4</span></li><li><span class="l">Apple</span><span class="t"><i style="--w:42.9%"></i></span><span class="v">3</span></li><li><span class="l">CES Descartes</span><span class="t"><i style="--w:28.6%"></i></span><span class="v">2</span></li><li><span class="l">Fujitsu Japan</span><span class="t"><i style="--w:28.6%"></i></span><span class="v">2</span></li><li><span class="l">Fukuda Denshi</span><span class="t"><i style="--w:28.6%"></i></span><span class="v">2</span></li></ul><a class="ds-dl" href="/data/jp-ai-devices-by-company.csv">jp-ai-devices-by-company.csv</a></div>
+<div class="ds-card"><h3>Companies with more than one product</h3><p class="ds-sub">English names; Japanese names as listed are in the CSV</p><ul class="ds-bars"><li><span class="l">Fujifilm</span><span class="t"><i style="--w:100.0%"></i></span><span class="v">7</span></li><li><span class="l">Cybernet Systems</span><span class="t"><i style="--w:71.4%"></i></span><span class="v">5</span></li><li><span class="l">LPixel</span><span class="t"><i style="--w:57.1%"></i></span><span class="v">4</span></li><li><span class="l">Apple</span><span class="t"><i style="--w:42.9%"></i></span><span class="v">3</span></li><li><span class="l">CES Descartes</span><span class="t"><i style="--w:28.6%"></i></span><span class="v">2</span></li><li><span class="l">Fujitsu Japan</span><span class="t"><i style="--w:28.6%"></i></span><span class="v">2</span></li><li><span class="l">Fukuda Denshi</span><span class="t"><i style="--w:28.6%"></i></span><span class="v">2</span></li></ul><a class="ds-dl" href="/data/japan-ai-devices-by-company.csv">japan-ai-devices-by-company.csv</a></div>
 
 Fujifilm's 7 products cover CT, chest X-ray and endoscopy. Cybernet Systems' 5 are all EndoBRAIN endoscopy tools. Apart from Apple Inc. and iRhythm Technologies, Inc., both US companies, every holder is listed under a Japanese company name, including Siemens' Japanese arm.
 
 ## Dataset 4: the full list
 
-Every product in the table, in the table's order. Descriptions are our short English versions of the table's summary. Download: <a class="ds-dl" href="/data/jp-ai-devices-register-extract.csv">jp-ai-devices-register-extract.csv</a>
+Every product in the table, in the table's order. Descriptions are our short English versions of the table's summary. Download: <a class="ds-dl" href="/data/japan-ai-devices-register-extract.csv">japan-ai-devices-register-extract.csv</a>
 
 | No. | First approved | Holder | What it does |
 |---|---|---|---|
@@ -111,11 +110,11 @@ If you work in endoscopy, chest imaging or breast ultrasound, approved AI suppor
 
 If a product you are considering is not in this table, that does not mean it is unapproved. The table is a partial list. Check with the PMDA or the vendor.
 
-<div class="callout"><b>Dr. Gupta's note.</b> Dr. Gupta's note will appear here after his review.</div>
+<div class="callout"><b>Dr. Gupta's note.</b> I have read this page. It counts products in an official Japanese table of approved AI medical software. The table itself says it is only a partial list, so a product missing here may still be approved. Approval means the software may be sold for a stated purpose. It does not tell you how accurate it is on your patients. Ask the vendor for the approval details and the evidence before you rely on it.</div>
 
 ## Outside Japan
 
-We have built the same kind of datasets for the [United States](/fda-ai-devices-datasets-us/) and [Australia](/au-tga-ai-devices-datasets/). Totals are not comparable across countries: each regulator decides differently what goes on its list. For how image-reading AI works in general, see [how radiology AI works](/radiology-ai/how-radiology-ai-works/).
+We have built the same kind of datasets for the [United States](/united-states-fda-ai-devices-datasets/) and [Australia](/australia-tga-ai-devices-datasets/). Totals are not comparable across countries: each regulator decides differently what goes on its list. For how image-reading AI works in general, see [how radiology AI works](/radiology-ai/how-radiology-ai-works/).
 
 ## Sources
 

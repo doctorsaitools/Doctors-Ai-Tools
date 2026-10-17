@@ -23,7 +23,7 @@ The Therapeutic Goods Administration (TGA) publishes a list of medical devices o
 
 ## Dataset 1: entries by classification
 
-Download: [au-tga-ai-list-by-class.csv](/data/au-tga-ai-list-by-class.csv). Most entries are Class IIa or IIb.
+Download: [australia-tga-ai-list-by-class.csv](/data/australia-tga-ai-list-by-class.csv). Most entries are Class IIa or IIb.
 
 | Classification | Entries | Share |
 |---|---|---|
@@ -34,7 +34,7 @@ Download: [au-tga-ai-list-by-class.csv](/data/au-tga-ai-list-by-class.csv). Most
 
 ## Dataset 2: manufacturers with more than one entry
 
-Manufacturers appear exactly as the TGA lists them, and we did not merge variants. There are 75 different manufacturer names in the list. The table shows the 19 with two or more entries. Download: [au-tga-ai-list-by-manufacturer.csv](/data/au-tga-ai-list-by-manufacturer.csv).
+Manufacturers appear exactly as the TGA lists them, and we did not merge variants. There are 75 different manufacturer names in the list. The table shows the 19 with two or more entries. Download: [australia-tga-ai-list-by-manufacturer.csv](/data/australia-tga-ai-list-by-manufacturer.csv).
 
 | Manufacturer (as listed) | Entries |
 |---|---|
@@ -60,7 +60,7 @@ Manufacturers appear exactly as the TGA lists them, and we did not merge variant
 
 ## Dataset 3: sponsors with more than one entry
 
-The sponsor is the Australian party named on each entry. There are 52 different sponsors. The table shows the 17 with two or more entries. One sponsor, Emergo, is named on 22 entries for many different manufacturers. Download: [au-tga-ai-list-by-sponsor.csv](/data/au-tga-ai-list-by-sponsor.csv).
+The sponsor is the Australian party named on each entry. There are 52 different sponsors. The table shows the 17 with two or more entries. One sponsor, Emergo, is named on 22 entries for many different manufacturers. Download: [australia-tga-ai-list-by-sponsor.csv](/data/australia-tga-ai-list-by-sponsor.csv).
 
 | Sponsor (as listed) | Entries |
 |---|---|
@@ -84,11 +84,11 @@ The sponsor is the Australian party named on each entry. There are 52 different 
 
 ## Dataset 4: the register extract
 
-All 100 entries with four fields: ARTG ID, manufacturer, sponsor and classification. We left out the TGA's long device description (GMDN term) and intended purpose text. Open each ARTG ID on the TGA's site for the full wording. Download: [au-tga-ai-list-register-extract.csv](/data/au-tga-ai-list-register-extract.csv).
+All 100 entries with four fields: ARTG ID, manufacturer, sponsor and classification. We left out the TGA's long device description (GMDN term) and intended purpose text. Open each ARTG ID on the TGA's site for the full wording. Download: [australia-tga-ai-list-register-extract.csv](/data/australia-tga-ai-list-register-extract.csv).
 
 ## Dataset 5: how the TGA list has changed
 
-The TGA's page history shows the table was first published on 29 August 2025 and replaced four times since. Download: [au-tga-ai-list-update-history.csv](/data/au-tga-ai-list-update-history.csv).
+The TGA's page history shows the table was first published on 29 August 2025 and replaced four times since. Download: [australia-tga-ai-list-update-history.csv](/data/australia-tga-ai-list-update-history.csv).
 
 | Date | Change |
 |---|---|
@@ -124,7 +124,7 @@ Look up the ARTG ID on the TGA's site and read the intended purpose. Then ask th
 
 ## Outside Australia
 
-The United States has its own list. See our [FDA datasets](/fda-ai-devices-datasets-us/) for the same kind of counts from the FDA's AI-enabled device list.
+The United States has its own list. See our [FDA datasets](/united-states-fda-ai-devices-datasets/) for the same kind of counts from the FDA's AI-enabled device list.
 
 ## Sources
 

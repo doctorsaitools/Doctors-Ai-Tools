@@ -23,7 +23,7 @@ The FDA publishes a list of medical devices it has authorized that use artificia
 
 ## Dataset 1: authorizations per year
 
-The yearly count grew from 18 in 2016 to 335 in 2025. In 2025 the count was 43% higher than in 2024 (235). 42 devices on the list were decided before 2016. Download: [us-fda-ai-devices-per-year.csv](/data/us-fda-ai-devices-per-year.csv) (all years from 1995).
+The yearly count grew from 18 in 2016 to 335 in 2025. In 2025 the count was 43% higher than in 2024 (235). 42 devices on the list were decided before 2016. Download: [united-states-fda-ai-devices-per-year.csv](/data/united-states-fda-ai-devices-per-year.csv) (all years from 1995).
 
 | Year | Devices |
 |---|---|
@@ -41,7 +41,7 @@ The yearly count grew from 18 in 2016 to 335 in 2025. In 2025 the count was 43% 
 
 ## Dataset 2: by FDA review panel
 
-The FDA assigns each device a lead review panel. These are FDA panels, not clinical specialties, so a device can be listed under a panel that differs from the specialty that uses it. Radiology is 76.2% of the list. Download: [us-fda-ai-devices-by-review-panel.csv](/data/us-fda-ai-devices-by-review-panel.csv) (all 18 panels; the table shows the top eight).
+The FDA assigns each device a lead review panel. These are FDA panels, not clinical specialties, so a device can be listed under a panel that differs from the specialty that uses it. Radiology is 76.2% of the list. Download: [united-states-fda-ai-devices-by-review-panel.csv](/data/united-states-fda-ai-devices-by-review-panel.csv) (all 18 panels; the table shows the top eight).
 
 | FDA review panel | Devices | Share |
 |---|---|---|
@@ -56,7 +56,7 @@ The FDA assigns each device a lead review panel. These are FDA panels, not clini
 
 ## Dataset 3: authorization pathway by year
 
-The submission number shows the route. K numbers are 510(k) clearances, D numbers (DEN) are De Novo authorizations and P numbers are premarket approvals (PMA). Of 1,614 devices, 1,553 are 510(k), 40 are De Novo and 21 are PMA. Download: [us-fda-ai-devices-pathway-by-year.csv](/data/us-fda-ai-devices-pathway-by-year.csv) (all years).
+The submission number shows the route. K numbers are 510(k) clearances, D numbers (DEN) are De Novo authorizations and P numbers are premarket approvals (PMA). Of 1,614 devices, 1,553 are 510(k), 40 are De Novo and 21 are PMA. Download: [united-states-fda-ai-devices-pathway-by-year.csv](/data/united-states-fda-ai-devices-pathway-by-year.csv) (all years).
 
 | Year | 510(k) | De Novo | PMA |
 |---|---|---|---|
@@ -72,7 +72,7 @@ The submission number shows the route. K numbers are 510(k) clearances, D number
 
 ## Dataset 4: companies with the most authorizations
 
-Companies are shown exactly as the FDA lists them, so one company can appear under several names (for example separate lines for Siemens Medical Solutions USA and Siemens Healthcare GmbH, or for different GE and Philips entities). We did not merge them. Only companies with eight or more devices are shown. Download: [us-fda-ai-devices-top-companies.csv](/data/us-fda-ai-devices-top-companies.csv).
+Companies are shown exactly as the FDA lists them, so one company can appear under several names (for example separate lines for Siemens Medical Solutions USA and Siemens Healthcare GmbH, or for different GE and Philips entities). We did not merge them. Only companies with eight or more devices are shown. Download: [united-states-fda-ai-devices-top-companies.csv](/data/united-states-fda-ai-devices-top-companies.csv).
 
 | Company (as listed by FDA) | Devices |
 |---|---|
@@ -98,7 +98,7 @@ Companies are shown exactly as the FDA lists them, so one company can appear und
 
 ## Dataset 5: the FDA's "Pathology" panel
 
-Only 10 devices have Pathology as the lead panel. This is a count of a panel label, and the list includes products that are not whole-slide AI: two 1990s automated Pap smear screening systems and genomic tests. Read the device names, not just the count. The Paige Prostate decision date matches the FDA's own announcement of 21 September 2021. Download: [us-fda-ai-devices-pathology.csv](/data/us-fda-ai-devices-pathology.csv).
+Only 10 devices have Pathology as the lead panel. This is a count of a panel label, and the list includes products that are not whole-slide AI: two 1990s automated Pap smear screening systems and genomic tests. Read the device names, not just the count. The Paige Prostate decision date matches the FDA's own announcement of 21 September 2021. Download: [united-states-fda-ai-devices-pathology.csv](/data/united-states-fda-ai-devices-pathology.csv).
 
 | Decision date | Submission | Device | Company | Pathway |
 |---|---|---|---|---|
