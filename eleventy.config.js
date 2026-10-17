@@ -1,5 +1,6 @@
 import { minify } from "html-minifier-terser";
 import markdownItAnchor from "markdown-it-anchor";
+import fs from "node:fs";
 import site from "./src/_data/site.js";
 
 export default function (eleventyConfig) {
@@ -7,6 +8,22 @@ export default function (eleventyConfig) {
   if (site.live && process.env.LIVE !== "1") {
     const missing = [!site.newsletterAction && "newsletterAction", !site.contactEmail && "contactEmail"].filter(Boolean);
     if (missing.length) throw new Error("live: true but missing in src/_data/site.js: " + missing.join(", "));
+  }
+
+  // Launch safety: a live site never carries an unreviewed post or an empty Dr. Gupta note.
+  if (site.live || process.env.CHECK_REVIEWED === "1") {
+    const dir = "src/posts";
+    const bad = [];
+    for (const f of fs.readdirSync(dir).filter((x) => x.endsWith(".md"))) {
+      const raw = fs.readFileSync(`${dir}/${f}`, "utf8");
+      if (/^sample:\s*true/m.test(raw)) continue;
+      if (!/^reviewed:\s*true/m.test(raw)) bad.push(`${f}: reviewed is not true`);
+      if (/^reviewedOn:\s*$/m.test(raw) || !/^reviewedOn:\s*\d{4}-\d{2}-\d{2}/m.test(raw)) bad.push(`${f}: reviewedOn missing`);
+      if (raw.includes("DR-GUPTA-NOTE-PENDING")) bad.push(`${f}: Dr. Gupta's note is still empty`);
+      if (/^preview:\s*true/m.test(raw)) bad.push(`${f}: still a draft preview`);
+      if (raw.includes("__PUBLISH_DATE__")) bad.push(`${f}: publish date not set`);
+    }
+    if (bad.length) throw new Error("Unreviewed posts cannot go live:\n  " + bad.join("\n  "));
   }
 
   eleventyConfig.addPassthroughCopy({ "src/fonts": "fonts" });

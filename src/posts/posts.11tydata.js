@@ -1,4 +1,4 @@
-const HUBS = { "AI Scribes": "/ai-scribes/", "Radiology AI": "/radiology-ai/" };
+const HUBS = { "AI Scribes": "/ai-scribes/", "Radiology AI": "/radiology-ai/", "Pathology AI": "/pathology-ai/", Guides: "/" };
 const SITE = "https://doctorsaitools.com";
 const iso = (x) => new Date(x).toISOString().slice(0, 10);
 
@@ -11,7 +11,7 @@ export default {
     schema: (d) => {
       const url = `${SITE}${HUBS[d.category] || "/"}${d.page.fileSlug}/`;
       const article = {
-        "@type": d.type === "review" ? "Review" : "Article",
+        "@type": d.type === "review" && d.score ? "Review" : "Article",
         headline: d.title,
         description: d.description,
         datePublished: iso(d.date),
@@ -29,7 +29,11 @@ export default {
         },
         publisher: { "@type": "Organization", "@id": `${SITE}/#org`, name: "Doctors AI Tools", url: SITE },
       };
-      if (d.type === "review") {
+      if (d.type === "review" && !d.score) {
+        // Researched but not yet tested: no rating, so no Review rich result.
+        article.about = { "@type": "SoftwareApplication", name: d.tool, applicationCategory: "HealthApplication" };
+      }
+      if (d.type === "review" && d.score) {
         article.itemReviewed = { "@type": "SoftwareApplication", name: d.tool, applicationCategory: "HealthApplication" };
         article.reviewRating = { "@type": "Rating", ratingValue: String(d.score), bestRating: "10", worstRating: "0" };
       }

@@ -12,26 +12,29 @@ layout: base.njk
 {% if description %}<p class="lead">{{ description }}</p>{% endif %}
 <div class="byline">
 <span class="seal" aria-hidden="true"><svg width="30" height="30" style="color:var(--ink)"><use href="#logo"/></svg></span>
-<p><span class="who">Medically reviewed by <b>{{ site.editor.name }}</b>, {{ site.editor.credentials }}</span><span class="meta"><time datetime="{{ (updated or date) | dateISO }}">Updated {{ (updated or date) | dateShort }}</time> · {{ content | readTime }} min read</span></p>
+<p><span class="who">{% if preview %}Awaiting medical review by{% else %}Medically reviewed by{% endif %} <b>{{ site.editor.name }}</b>, {{ site.editor.credentials }}</span><span class="meta"><time datetime="{{ (updated or date) | dateISO }}">Updated {{ (updated or date) | dateShort }}</time> · {{ content | readTime }} min read</span></p>
 </div>
 <p class="disclose">We may earn a commission if you buy through our links. It never changes our scores. <a href="/disclosure/">How we stay independent</a></p>
 </header>
 
+{% if preview %}<p class="sample"><b>Draft preview.</b> This page is awaiting review by {{ site.editor.name }} and is not yet published. Facts are from the sources listed at the end; nothing here has been tested by our team.</p>{% endif %}
 {% if sample %}<p class="sample"><b>Sample only.</b> This page shows the layout of a finished {{ type }}. The names, scores and text are placeholders.</p>{% endif %}
 
 {% if type == "review" %}
-<section class="verdict" aria-label="Our verdict">
-<div class="vscore"><b>{{ score }}</b><small>/10</small><span>Our score</span></div>
+<section class="verdict" aria-label="{% if score %}Our verdict{% else %}Status{% endif %}">
+{% if score %}<div class="vscore"><b>{{ score }}</b><small>/10</small><span>Our score</span></div>
+{% else %}<div class="vscore"><span>Researched, not yet tested</span></div>{% endif %}
 <div class="vbody">
-<h2>The short version</h2>
+<h2>{% if score %}The short version{% else %}Where this review stands{% endif %}</h2>
 <p>{{ verdict }}</p>
 <dl class="facts"><div><dt>Best for</dt><dd>{{ bestFor }}</dd></div><div><dt>Pricing</dt><dd>{{ pricing }}</dd></div></dl>
 </div>
 <div class="proscons">
-<div><h3>What we liked</h3><ul class="pro">{% for i in pros %}<li>{{ i }}</li>{% endfor %}</ul></div>
-<div><h3>What to know</h3><ul class="con">{% for i in cons %}<li>{{ i }}</li>{% endfor %}</ul></div>
+<div><h3>{% if score %}What we liked{% else %}What stands out on paper{% endif %}</h3><ul class="pro">{% for i in pros %}<li>{{ i }}</li>{% endfor %}</ul></div>
+<div><h3>{% if score %}What to know{% else %}What to check before you buy{% endif %}</h3><ul class="con">{% for i in cons %}<li>{{ i }}</li>{% endfor %}</ul></div>
 </div>
-{% if affiliateUrl %}<div class="vcta"><a class="btn t" href="{{ affiliateUrl }}" rel="sponsored noopener" target="_blank">Visit {{ tool }}<span class="sr"> (opens in a new tab)</span></a></div>{% endif %}
+{% if affiliateUrl %}<div class="vcta"><a class="btn t" href="{{ affiliateUrl }}" rel="sponsored nofollow noopener" target="_blank">Visit {{ tool }}<span class="sr"> (opens in a new tab)</span></a></div>
+{% elif officialUrl %}<div class="vcta"><a class="btn s" href="{{ officialUrl }}" rel="nofollow noopener" target="_blank">{{ tool }} official site<span class="sr"> (opens in a new tab)</span></a></div>{% endif %}
 </section>
 {% endif %}
 
@@ -47,7 +50,7 @@ layout: base.njk
 <div>
 <p class="eye">Why you can trust this</p>
 <h2 id="trust-h">Reviewed by {{ site.editor.name }}</h2>
-<p>{{ site.editor.credentials }} · {{ site.editor.specialty }} · {{ site.editor.experience }}. Every review is checked by him before it is published. <a href="/methodology/">See how we review</a></p>
+<p>{{ site.editor.credentials }} · {{ site.editor.specialty }} · {{ site.editor.experience }}. {% if preview %}This draft has not been reviewed by him yet.{% else %}Every review is checked by him before it is published.{% endif %} <a href="/methodology/">See how we review</a></p>
 </div>
 </section>
 </article>
