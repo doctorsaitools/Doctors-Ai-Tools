@@ -1,0 +1,11 @@
+input_data_our_grouping,devices,share
+GI endoscopy,12,29.3%
+CT,9,22.0%
+Chest X-ray,6,14.6%
+ECG,3,7.3%
+Pulse or motion sensors,3,7.3%
+Ultrasound,3,7.3%
+Surgical endoscopy,2,4.9%
+Dental X-ray,1,2.4%
+MRI,1,2.4%
+Throat camera images,1,2.4%

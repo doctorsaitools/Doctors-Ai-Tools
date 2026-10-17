@@ -1,0 +1,42 @@
+no,approval_date,partial_change_approval_date,product_name_as_listed,holder_as_listed,holder_english,what_it_does_our_translation,input_data_our_grouping
+1,2018-12-06,,内視鏡画像診断支援ソフトウエア EndoBRAIN,サイバネットシステム株式会社,Cybernet Systems,Supports telling neoplastic from non-neoplastic colorectal lesions on ultra-magnifying endoscopy,GI endoscopy
+2,2019-09-17,,医用画像解析ソフトウエアEIRL aneurysm,エルピクセル株式会社,LPixel,Detects candidate aneurysm-like changes on brain MR angiography,MRI
+3,2019-12-25,,類似画像症例検索ソフトウエアFS-CM687型,富士フイルム株式会社,Fujifilm,"Analyses regions of interest on CT (lung nodules, diffuse lung disease, liver masses) and searches the site's database for similar cases",CT
+4,2020-04-27,,内視鏡画像診断支援ソフトウエア EndoBRAIN-UC,サイバネットシステム株式会社,Cybernet Systems,Shows inflammation activity (active or remission) in ulcerative colitis on ultra-magnifying endoscopy,GI endoscopy
+5,2020-05-08,,肺結節検出プログラム FS-AI688型,富士フイルム株式会社,Fujifilm,Detects candidate lung nodules on CT,CT
+6,2020-06-03,2020-08-11,COVID-19肺炎画像解析AIプログラム InferRead CT Pneumonia,株式会社CESデカルト,CES Descartes,Shows the likelihood of COVID-19 pneumonia findings on CT at three confidence levels,CT
+7,2020-06-19,,AI-Radコンパニオン,シーメンスヘルスケア株式会社,Siemens Healthcare,Detects candidate lung nodules on CT,CT
+8,2020-06-29,2021-03-29,内視鏡画像診断支援プログラム EndoBRAIN-EYE,サイバネットシステム株式会社,Cybernet Systems,Detects colorectal polyps on endoscopy,GI endoscopy
+9,2020-06-29,,COVID-19肺炎画像解析プログラムAli-M3,株式会社MICメディカル,MIC Medical,Shows the likelihood of COVID-19 pneumonia findings on CT at three confidence levels,CT
+10,2020-07-15,,内視鏡画像診断支援ソフトウエア EndoBRAIN-Plus,サイバネットシステム株式会社,Cybernet Systems,"Supports predicting colorectal lesion pathology (non-neoplastic, adenoma or intramucosal cancer, invasive cancer)",GI endoscopy
+11,2020-08-20,,医用画像解析ソフトウェアEIRL X-Ray Lung nodule,エルピクセル株式会社,LPixel,Detects candidate lung nodules on chest X-ray,Chest X-ray
+12,2020-09-02,2022-09-20,内視鏡検査支援プログラムEW10-EC02,富士フイルム株式会社,Fujifilm,Detects colorectal polyps on endoscopy and supports their characterisation,GI endoscopy
+13,2020-11-24,,乳がん診断支援プログラムRN-デカルト,株式会社CESデカルト,CES Descartes,Detects candidate lesions on breast ultrasound,Ultrasound
+14,2020-11-30,,WISE VISION 内視鏡画像解析AI,日本電気株式会社,NEC,Marks candidate precancerous and early colorectal cancer lesions on endoscopy and supports diagnosis of protruding lesions,GI endoscopy
+15,2021-05-26,,COVID-19肺炎画像解析プログラム FS-AI693型,富士フイルム株式会社,Fujifilm,Shows the likelihood of COVID-19 pneumonia findings on CT at three confidence levels,CT
+16,2021-07-07,,胸部X線画像病変検出(CAD)プログラム LU-AI689型,富士フイルム株式会社,Fujifilm,Detects candidate abnormal shadows such as lung nodules and pneumothorax on chest X-ray,Chest X-ray
+17,2021-09-01,,肋骨骨折検出プログラム FS-AI691型,富士フイルム株式会社,Fujifilm,Detects candidate rib fractures on CT,CT
+18,2021-10-11,,画像診断支援ソフトウェア KDSS-CXR-AI-101,コニカミノルタ株式会社,Konica Minolta,Detects candidate abnormal shadows such as lung nodules and masses on chest X-ray,Chest X-ray
+19,2021-12-09,,胸部X線肺炎検出エンジン DoctorNet JLK-CRP,株式会社ドクターネット,Doctor-Net,Shows the likelihood of infectious pneumonia findings on chest X-ray at three confidence levels,Chest X-ray
+20,2021-12-24,,HOPE LifeMark-CAD 肺炎画像解析支援プログラム for COVID-19,富士通Ｊａｐａｎ株式会社,Fujitsu Japan,Shows the likelihood of COVID-19 pneumonia findings on CT at three confidence levels,CT
+21,2022-04-26,,nodoca（ノドカ）,アイリス株式会社,Aillis,Supports diagnosis of influenza from throat images and clinical information,Throat camera images
+22,2022-06-02,,COVID-19肺炎解析ソフトウェア SCO-PA01,キヤノンメディカルシステムズ株式会社,Canon Medical Systems,Shows the likelihood of COVID-19 pneumonia findings on CT at two confidence levels,CT
+23,2022-09-20,,内視鏡検査支援プログラム EW10-EG01,富士フイルム株式会社,Fujifilm,Detects oesophageal and gastric neoplastic lesions on endoscopy,GI endoscopy
+24,2022-11-14,,医用画像解析ソフトウェア EIRL Colon Polyp,エルピクセル株式会社,LPixel,Detects candidate colorectal polyps on endoscopy,GI endoscopy
+25,2022-12-16,2024-01-26,医用画像解析ソフトウェア EIRL Chest XR,エルピクセル株式会社,LPixel,Detects candidate abnormal shadows such as lung nodules and atelectasis on chest X-ray,Chest X-ray
+26,2023-01-17,,内視鏡画像診断支援ソフトウェア EndoBRAIN-X,サイバネットシステム株式会社,Cybernet Systems,Supports telling neoplastic from non-neoplastic colorectal lesions on colonoscopy,GI endoscopy
+27,2023-05-23,,Appleの不規則な心拍の通知プログラム,Apple Inc.,Apple,Home-use program that analyses pulse-rate data and notifies the user of irregular rhythms suggesting atrial fibrillation,Pulse or motion sensors
+28,2023-11-20,,線維化を伴う間質性肺疾患検出支援プログラム BMAX,コスモテック株式会社,Cosmotec,Detects candidate shadows of fibrosing interstitial lung disease on chest X-ray,Chest X-ray
+29,2023-12-21,,内視鏡診断支援装置 OIP-1,オリンパスメディカルシステムズ株式会社,Olympus Medical Systems,Detects candidate colorectal polyps on endoscopy,GI endoscopy
+30,2023-12-26,,内視鏡画像診断支援ソフトウェア gastroAI-model G,株式会社AIメディカルサービス,AI Medical Service,Detects gastric lesions on endoscopy that may need further examination,GI endoscopy
+31,2024-03-05,,早期胃癌深達度診断支援システム Deepth-EGC,オージー技研株式会社,OG Giken,Analyses endoscopy images of early gastric cancer and outputs the likelihood of intramucosal versus submucosal cancer as a number,GI endoscopy
+32,2024-04-12,,外科手術視覚支援プログラム Eureka α,アナウト株式会社,Anaut,Estimates and highlights anatomical structures on surgical endoscopy images,Surgical endoscopy
+33,2024-05-08,,Appleの心房細動履歴プログラム,Apple Inc.,Apple,Analyses pulse-rate data to estimate how much of the time Apple Watch was worn showed signs of atrial fibrillation,Pulse or motion sensors
+34,2024-05-08,,乳癌超音波画像診断支援ソフトウェア スマートオピニオン METIS Eye,株式会社 Smart Opinion,Smart Opinion,Detects candidate lesions on breast ultrasound,Ultrasound
+35,2024-05-21,,PanoSCOPE（パノスコープ）,メディア株式会社,Media,Analyses dental panoramic X-rays to give information for the dentist's assessment of bone fragility,Dental X-ray
+36,2024-06-19,,カーディマックス FCP-9900Aiシステム,フクダ電子株式会社,Fukuda Denshi,Multifunction electrocardiograph that estimates the likelihood of paroxysmal atrial fibrillation in the past two years,ECG
+37,2024-07-29,,HOPE LifeMark 胎児心臓超音波スクリーニング支援システム,富士通Japan株式会社,Fujitsu Japan,Detects and displays 18 parts of the fetal heart on screening ultrasound video to help avoid missed abnormalities,Ultrasound
+38,2024-08-02,,内視鏡手術支援プログラム SurVis-Hys,株式会社Jmees,Jmees,Estimates and highlights anatomical structures on surgical endoscopy images,Surgical endoscopy
+39,2024-08-26,,カーディマックス FCP-9800Ai,フクダ電子株式会社,Fukuda Denshi,Multifunction electrocardiograph that estimates the likelihood of paroxysmal atrial fibrillation in the past two years,ECG
+40,2024-08-26,,Appleの睡眠時無呼吸の兆候の通知プログラム,Apple Inc.,Apple,Home-use program that analyses wrist-movement data from an accelerometer and notifies the user of breathing disturbances suggesting sleep apnoea,Pulse or motion sensors
+41,2024-09-09,,Zio ECG記録・解析システム,"iRhythm Technologies, Inc.",iRhythm Technologies,Records and analyses up to 14 days of everyday ECG data to help diagnose arrhythmias,ECG

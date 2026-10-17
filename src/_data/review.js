@@ -6,5 +6,7 @@ export default {
     { n: 3, title: "How Radiology AI Works: Triage, Detection and Reporting", url: "/radiology-ai/how-radiology-ai-works/", what: "What radiology AI does, what FDA clearance means, and its limits. Please check this one closely." },
     { n: 4, title: "How Digital Pathology AI Works: From Glass Slide to Algorithm", url: "/pathology-ai/how-digital-pathology-ai-works/", what: "How a slide becomes an image and what AI does with it. Please check this one closely." },
     { n: 5, title: "NHS Guidance on AI Scribes, Explained for GPs", url: "/ai-scribes/nhs-ambient-voice-technology-guidance/", what: "A summary of NHS England's rules for using AI scribes in general practice." },
+    { n: 6, title: "Japan's Approved AI Medical Devices: 41 in Data", url: "/jp-ai-medical-devices-datasets/", what: "Four datasets from Japan's official table of approved AI medical software, with download files. Please check the wording closely." },
+    { n: 7, title: "Germany's Prescribable Health Apps: DiGA in Data", url: "/de-diga-directory-datasets/", what: "Five datasets from Germany's official directory of prescribable health apps, with download files. Please check the wording closely." },
   ],
 };

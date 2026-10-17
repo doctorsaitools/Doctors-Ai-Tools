@@ -327,3 +327,25 @@ footer{padding:64px 0 40px;font-size:15px}
   .hub-body td:first-child::before{display:none}
 }
 .byline .avatar{width:48px;height:48px;border-radius:50%;object-fit:cover;flex:none}
+
+/* ---------- Dataset pages ---------- */
+.ds-keys{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:1.6em}
+.ds-key{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:18px 18px 16px}
+.ds-key b{display:block;font-family:var(--serif);font-weight:450;font-size:clamp(32px,3.6vw,44px);line-height:1;color:var(--ink);letter-spacing:-.02em}
+.ds-key span{display:block;margin-top:10px;font-size:14px;line-height:1.45;color:var(--muted)}
+.ds-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:22px 22px 18px}
+.ds-card h3{margin:0 0 4px;font-size:20px}
+.ds-card .ds-sub{font-size:14.5px;color:var(--muted);margin:0 0 16px}
+.ds-bars{list-style:none;padding:0!important;display:grid;gap:10px!important;margin:0}
+.ds-bars li{display:grid;grid-template-columns:minmax(0,11.5em) minmax(0,1fr) 3.2em;align-items:center;gap:12px;font-size:15px;line-height:1.3}
+.ds-bars li::marker{content:none}
+.ds-bars .l{color:var(--ink)}
+.ds-bars .t{height:12px;background:var(--chip);border-radius:99px;overflow:hidden}
+.ds-bars .t i{display:block;height:100%;width:var(--w);background:var(--teal);border-radius:99px}
+.ds-bars .v{text-align:right;font-variant-numeric:tabular-nums;color:var(--ink);font-weight:600}
+.ds-dl{display:inline-flex;align-items:center;gap:8px;margin-top:14px;padding:8px 14px;border:1px solid var(--line);border-radius:99px;font-size:14px;text-decoration:none!important;color:var(--teal)!important;background:var(--bg)}
+.ds-dl::before{content:"↓";font-weight:700}
+.ds-dl:hover{border-color:var(--teal)}
+.ds-src{border-left:3px solid var(--gold);padding:4px 0 4px 16px;font-size:15.5px;color:var(--muted)}
+.prose td.n,.prose th.n{text-align:right;font-variant-numeric:tabular-nums}
+@media (max-width:560px){.ds-bars li{grid-template-columns:minmax(0,1fr) 3em}.ds-bars .t{grid-column:1/-1;grid-row:2}}

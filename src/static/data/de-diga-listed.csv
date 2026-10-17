@@ -1,0 +1,64 @@
+name,status,manufacturer,manufacturer_country,platforms,first_icd10_code_shown,manufacturer_price_eur,add_on_devices,doctor_services_required
+ACTICORE1,provisional,ACTICORE AG,Switzerland,iOS+Android,N39.3,795.00,included,no
+attexis,permanent,GAIA AG,Germany,Web,F90.0,249.86,none,no
+Axia,permanent,Applimeda GmbH,Germany,iOS+Android,M45,599.00,optional,yes
+Cara Care für Reizdarm,permanent,HiDoc Technologies GmbH,Germany,iOS+Android,K58,248.00,none,no
+companion patella,permanent,PrehApp GmbH,Germany,Web,M22.2,223.49,none,yes
+companion shoulder,provisional,PrehApp GmbH,Germany,Web,M75,419.00,none,yes
+deprexis,permanent,GAIA AG,Germany,Web,F32.0,228.00,none,no
+eCovery,provisional,eCovery GmbH,Germany,iOS+Android,M42.16,574.00,none,no
+edupression.com,permanent,SOFY GmbH,Austria,Web,F32.0,224.80,none,no
+elevida,permanent,GAIA AG,Germany,Web,G35,243.00,none,no
+elona explore,provisional,Elona Health GmbH,Germany,iOS+Android,F32.0,535.49,none,no
+elona therapy Depression,permanent,Elona Health GmbH,Germany,iOS+Android+Web,F32.0,229.50,none,yes
+Endo-App,permanent,Endo Health GmbH,Germany,iOS+Android,N80,235.80,none,no
+Frieda Menova,provisional,Frieda Health GmbH,Germany,iOS+Android,N95.1,490.00,none,no
+glucura Diabetestherapie,permanent,Perfood Laboratories GmbH,Germany,iOS+Android,E11,499.80,required,no
+HelloBetter Chronische Schmerzen,permanent,GET.ON Institut für Online Gesundheitstrainings GmbH,Germany,iOS+Android+Web,F45.40,235.00,none,no
+HelloBetter Diabetes,permanent,GET.ON Institut für Online Gesundheitstrainings GmbH,Germany,iOS+Android+Web,E10,222.99,none,no
+HelloBetter Panik,permanent,GET.ON Institut für Online Gesundheitstrainings GmbH,Germany,iOS+Android+Web,F40.01,230.00,none,no
+HelloBetter Schlafen,permanent,GET.ON Institut für Online Gesundheitstrainings GmbH,Germany,iOS+Android+Web,F51.0,241.25,none,no
+HelloBetter Stress und Burnout,permanent,GET.ON Institut für Online Gesundheitstrainings GmbH,Germany,iOS+Android+Web,Z73,235.00,none,no
+HelloBetter Vaginismus Plus,permanent,GET.ON Institut für Online Gesundheitstrainings GmbH,Germany,iOS+Android+Web,F52.5,235.00,optional,no
+hiToco: ADHS Elterntraining,provisional,medigital GmbH,Germany,iOS+Android,F90,479.20,none,no
+INKA,provisional,NEXTEC Medical GmbH,Germany,iOS+Android,N32.8,670.49,none,yes
+Invirto,permanent,Sympatient GmbH,Germany,iOS+Android,F40.00,220.00,included,yes
+isi PMS App,provisional,Endo Health GmbH,Germany,iOS+Android,N94.3,598.95,none,no
+Kaia Rückenschmerzen,permanent,kaia health software GmbH,Germany,iOS+Android,M54,221.49,none,no
+Kalmeda,permanent,Pohl-Boskamp Digital Health GmbH,Germany,iOS+Android,H93.1,189.00,none,no
+Kranus Edera,permanent,Kranus Health GmbH,Germany,iOS+Android,N48.4,235.00,none,no
+Kranus Lutera,permanent,Kranus Health GmbH,Germany,iOS+Android,N32.8,240.50,none,yes
+Kranus Mictera,permanent,Kranus Health GmbH,Germany,iOS+Android,N39.3,681.30,none,yes
+levidex,permanent,GAIA AG,Germany,Web,G35,247.81,none,no
+Mawendo,permanent,Mawendo GmbH,Germany,Web,M22,119.00,none,yes
+Meine Tinnitus App,permanent,BAYOOCARE GmbH,Germany,iOS+Android,H93.1,260.00,none,no
+memodio,provisional,memodio GmbH,Germany,iOS+Android,F00,595.00,none,no
+Mindable: Panik & Agoraphobie,permanent,Mindable Health GmbH,Germany,iOS+Android,F40.0,245.50,none,no
+Mindable: Soziale Phobie,permanent,Mindable Health GmbH,Germany,iOS+Android,F40.1,765.00,none,no
+My7steps App,permanent,My7steps GmbH,Germany,Web,F32.0,,none,no
+neolexon Aphasie,permanent,Limedix GmbH,Germany,iOS+Android+Web,R47.0,223.01,none,yes
+NeuroNation MED,permanent,Synaptikon GmbH,Germany,iOS+Android,F06.7,229.00,none,no
+NichtraucherHelden-App,permanent,Sanero Medical GmbH,Germany,iOS+Android,F17.2,211.00,none,no
+Novego: Ängste überwinden,permanent,IVPNetworks GmbH,Germany,Web,F40.0,189.00,none,no
+Novego: Depressionen bewältigen,permanent,IVPNetworks GmbH,Germany,Web,F32.0,199.00,none,no
+ORIKO ADHS-Therapie,provisional,MiNDNET e-Health Solutions GmbH,Germany,iOS+Android,F90.0,360.00,none,no
+Oviva Direkt Bluthochdruck,provisional,Oviva AG (Zweigniederlassung Deutschland),Germany,iOS+Android,I10.00,599.00,optional,yes
+Oviva Direkt für Adipositas,permanent,Oviva AG (Zweigniederlassung Deutschland),Germany,iOS+Android,E66.00,199.25,optional,yes
+Pia-App bei Regelschmerzen,provisional,Endo Health GmbH,Germany,iOS+Android,N94.4,598.95,none,no
+PINK! Coach,permanent,PINK gegen Brustkrebs GmbH,Germany,iOS+Android,C50,234.50,none,no
+priovi,permanent,GAIA AG,Germany,Web,F60.31,244.00,none,no
+ProHerz,permanent,ProCarement GmbH,Germany,iOS+Android,I50.02,235.00,required,yes
+Selfapys Online-Kurs bei Binge-Eating-Störung,permanent,Selfapy GmbH,Germany,iOS+Android+Web,F50.4,232.00,none,no
+Selfapys Online-Kurs bei Bulimia Nervosa,permanent,Selfapy GmbH,Germany,iOS+Android+Web,F50.2,232.00,none,no
+Selfapys Online-Kurs bei Depression,permanent,Selfapy GmbH,Germany,iOS+Android+Web,F32.0,217.18,none,no
+Selfapys Online-Kurs bei Generalisierter Angststörung,permanent,Selfapy GmbH,Germany,iOS+Android+Web,F41.1,228.50,none,no
+Smoke Free - Rauchen aufhören,permanent,Smoke Free 23 GmbH,Germany,iOS+Android,F17.2,231.25,none,no
+somnio,permanent,mementor DE GmbH,Germany,iOS+Android+Web,F51.0,224.99,optional,yes
+somnovia,permanent,GAIA AG,Germany,Web,F51.0,236.00,none,no
+Untire,permanent,Tired of Cancer B.V.,Netherlands,iOS+Android,C50,240.50,none,no
+velibra,permanent,GAIA AG,Germany,Web,F40.01,230.00,none,no
+Vera-App für Wechseljahresbeschwerden,provisional,Endo Health GmbH,Germany,iOS+Android,N95.1,598.95,none,no
+Vitadio,permanent,Vitadio s.r.o.,Czech Republic,iOS+Android,E11,224.01,none,no
+ViViRA,permanent,Vivira Health Lab GmbH,Germany,iOS+Android,M42.0,206.79,none,yes
+vorvida,permanent,GAIA AG,Germany,Web,F10.1,185.00,none,no
+zanadio,permanent,Sidekick Health Germany GmbH,Germany,iOS+Android,E66.00,218.00,optional,yes
