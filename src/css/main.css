@@ -109,6 +109,7 @@ section.tight{padding-top:0}
 .pc:hover{transform:translateY(-3px);box-shadow:0 18px 40px rgba(13,36,64,.10);border-color:var(--teal)}
 .pc .i{width:52px;height:52px;border-radius:14px;background:var(--teal-soft);display:flex;align-items:center;justify-content:center;margin-bottom:auto;color:var(--teal)}
 .pc .i svg{width:26px;height:26px}
+.pc .pi{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:12px;margin-bottom:22px}
 .pc small{font-size:13px;color:var(--muted);margin:26px 0 6px}
 .pc h3{font-size:25px;margin-bottom:10px;font-weight:450}
 .pc p{font-size:15px}

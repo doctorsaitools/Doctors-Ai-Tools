@@ -9,6 +9,8 @@
     {
       "icon": "doc",
       "meta": "8 tools researched",
+      "img": "area-notes",
+      "alt": "A doctor in a white coat with a stethoscope completing a patient medical history form on a clipboard",
       "title": "Notes & charting",
       "text": "AI scribes that listen to the consult and draft your notes.",
       "cta": "See AI scribes",
@@ -17,6 +19,8 @@
     {
       "icon": "scan",
       "meta": "7 tools researched",
+      "img": "area-imaging",
+      "alt": "A doctor's hand pointing at a skull X-ray on a tablet",
       "title": "Imaging & reporting",
       "text": "Radiology AI for triage, detection and faster reports.",
       "cta": "See radiology AI",

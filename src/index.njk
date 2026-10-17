@@ -56,7 +56,7 @@ eleventyComputed:
 <section><div class="w">
 <div class="head"><div><p class="eye">Start here</p><h2>What do you want AI<br>to take off your plate?</h2></div><p>Pick your problem and see the shortlist.</p></div>
 <ul class="pick">
-{% for a in home.areas %}<li><a class="pc{% if a.soon %} soon{% endif %}" href="{{ a.href }}"><span class="i"><svg aria-hidden="true"><use href="#{{ a.icon }}"/></svg></span><small>{{ a.meta }}</small><h3>{{ a.title }}</h3><p>{{ a.text }}</p><span class="go">{{ a.cta }} →</span></a></li>{% endfor %}
+{% for a in home.areas %}<li><a class="pc{% if a.soon %} soon{% endif %}" href="{{ a.href }}">{% if a.img %}<img class="pi" src="/img/{{ a.img }}-640.webp" srcset="/img/{{ a.img }}-400.webp 400w, /img/{{ a.img }}-640.webp 640w" sizes="(max-width:760px) calc(100vw - 100px), 305px" width="640" height="360" loading="lazy" decoding="async" alt="{{ a.alt }}">{% endif %}<span class="i"><svg aria-hidden="true"><use href="#{{ a.icon }}"/></svg></span><small>{{ a.meta }}</small><h3>{{ a.title }}</h3><p>{{ a.text }}</p><span class="go">{{ a.cta }} →</span></a></li>{% endfor %}
 </ul>
 </div></section>
 
