@@ -11,7 +11,7 @@ layout: base.njk
 <h1>{{ title }}</h1>
 {% if description %}<p class="lead">{{ description }}</p>{% endif %}
 <div class="byline">
-<span class="seal" aria-hidden="true"><svg width="30" height="30" style="color:var(--ink)"><use href="#logo"/></svg></span>
+<img class="avatar" src="/img/gupta-avatar.webp" width="48" height="48" alt="{{ site.editor.name }}" decoding="async">
 <p><span class="who">{% if preview %}Awaiting medical review by{% else %}Medically reviewed by{% endif %} <b>{{ site.editor.name }}</b>, {{ site.editor.credentials }}</span><span class="meta"><time datetime="{{ (updated or date) | dateISO }}">Updated {{ (updated or date) | dateShort }}</time> · {{ content | readTime }} min read</span></p>
 </div>
 <p class="disclose">We may earn a commission if you buy through our links. It never changes our scores. <a href="/disclosure/">How we stay independent</a></p>
