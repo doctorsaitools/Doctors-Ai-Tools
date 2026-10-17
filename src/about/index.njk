@@ -16,7 +16,7 @@ eleventyComputed:
       "@id": "https://doctorsaitools.com/#site"
 ---
 {% set ph = not site.live %}
-<div class="portrait" style="max-width:340px;margin:0 0 28px"><img src="/img/gupta-portrait-800.webp" srcset="/img/gupta-portrait-480.webp 480w, /img/gupta-portrait-800.webp 800w" sizes="340px" width="800" height="1000" fetchpriority="high" decoding="async" alt="{{ site.editor.name }}, {{ site.editor.title }}"></div>
+<div class="portrait" style="max-width:340px;margin:0 0 28px"><img src="/img/gupta-portrait-480.webp" srcset="/img/gupta-portrait-480.webp 480w, /img/gupta-portrait-640.webp 640w, /img/gupta-portrait-800.webp 800w" sizes="(max-width:760px) 270px, 340px" width="800" height="1000" fetchpriority="high" decoding="async" alt="{{ site.editor.name }}, {{ site.editor.title }}"></div>
 
 <h2 id="editor">{{ site.editor.name }}, {{ site.editor.credentials }}</h2>
 <p><b>{{ site.editor.title }}</b> · {{ site.editor.specialty }} · {{ site.editor.experience }}</p>

@@ -1,24 +1,26 @@
 {
-  "announce": { "lead": "New:", "strong": "The 2026 AI Scribe Guide", "rest": "— 12 tools, tested in real clinics", "href": "/ai-scribes/" },
+  "announce": { "lead": "New:", "strong": "AI scribe shortlist", "rest": "— 8 tools researched, prices checked 17 Oct 2026", "href": "/ai-scribes/" },
   "areas": [
-    { "icon": "doc", "meta": "12 tools reviewed", "title": "Notes & charting", "text": "AI scribes that listen to the consult and draft your notes.", "cta": "Compare AI scribes", "href": "/ai-scribes/" },
-    { "icon": "scan", "meta": "8 tools reviewed", "title": "Imaging & reporting", "text": "Radiology AI for triage, detection and faster reports.", "cta": "Compare radiology AI", "href": "/radiology-ai/" },
+    { "icon": "doc", "meta": "8 tools researched", "title": "Notes & charting", "text": "AI scribes that listen to the consult and draft your notes.", "cta": "See AI scribes", "href": "/ai-scribes/" },
+    { "icon": "scan", "meta": "7 tools researched", "title": "Imaging & reporting", "text": "Radiology AI for triage, detection and faster reports.", "cta": "See radiology AI", "href": "/radiology-ai/" },
     { "icon": "flask", "meta": "Coming soon", "title": "Pathology & lab", "text": "Digital pathology and slide-analysis tools.", "cta": "Notify me", "href": "#briefing", "soon": true }
   ],
-  "picks": [
-    { "rank": 1, "name": "Scribe Tool A", "badge": "Editor's choice", "bestFor": "Busy outpatient clinics", "from": "$99 / month", "score": "9.4", "review": "#", "visit": "#" },
-    { "rank": 2, "name": "Scribe Tool B", "note": "Best value", "bestFor": "Solo practitioners", "from": "$49 / month", "score": "9.1", "review": "#", "visit": "#" },
-    { "rank": 3, "name": "Scribe Tool C", "note": "Best for hospitals", "bestFor": "Multi-specialty groups", "from": "Custom", "score": "8.8", "review": "#", "visit": "#" }
+  "shortlist": [
+    { "name": "Freed", "bestFor": "Solo clinicians and small practices", "markets": "US", "from": "From US$39/mo" },
+    { "name": "Heidi", "bestFor": "Individual clinicians to large teams", "markets": "US, UK, Canada, Australia", "from": "Free plan available" },
+    { "name": "Lyrebird Health", "bestFor": "GPs and clinics", "markets": "Australia, expanding to UK", "from": "From A$160/mo" },
+    { "name": "Tali", "bestFor": "Family doctors and clinics", "markets": "Canada, US", "from": "Free plan available" }
   ],
   "steps": [
-    { "title": "Hands-on testing", "text": "We use every tool on realistic clinical scenarios — not vendor demos." },
-    { "title": "Clinical accuracy", "text": "Output checked by our physician editor for errors that matter to patients." },
-    { "title": "Privacy & compliance", "text": "HIPAA, GDPR and data-handling verified, in plain English." },
-    { "title": "True cost", "text": "Real pricing, contract terms and hidden fees — before you book a demo." }
+    { "title": "Research", "text": "Features, pricing, clearances and privacy terms from each vendor, with vendor claims labelled as claims." },
+    { "title": "Hands-on testing", "text": "Each tool is used on realistic clinical scenarios, never on real patient data." },
+    { "title": "Privacy & safety", "text": "Data handling and regulatory clearances checked for the US, UK, Canada and Australia." },
+    { "title": "Physician review", "text": "Dr. Ravi Shankar Gupta reviews every verdict before it is published." }
   ],
   "articles": [
-    { "tag": "AI Scribes · Review", "title": "Scribe Tool A review: worth $99 a month?", "min": 5, "tone": "a", "href": "#" },
-    { "tag": "Radiology AI · Guide", "title": "AI in radiology: what actually works in 2026", "min": 7, "tone": "b", "href": "#" },
-    { "tag": "Comparison", "title": "Tool A vs Tool B: which scribe for a solo practice?", "min": 4, "tone": "c", "href": "#" }
-  ]
+    { "tag": "AI Scribes · Shortlist", "title": "AI medical scribes: the shortlist and how to choose", "meta": "Updated 17 Oct 2026", "tone": "a", "href": "/ai-scribes/" },
+    { "tag": "Radiology AI · Shortlist", "title": "Radiology AI: what the main tools do, and six questions to ask", "meta": "Updated 17 Oct 2026", "tone": "b", "href": "/radiology-ai/" },
+    { "tag": "Method", "title": "How we review AI tools", "meta": "Our four stages", "tone": "c", "href": "/methodology/" }
+  ],
+  "editorQuote": ""
 }

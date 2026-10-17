@@ -1,7 +1,14 @@
 import { minify } from "html-minifier-terser";
 import markdownItAnchor from "markdown-it-anchor";
+import site from "./src/_data/site.js";
 
 export default function (eleventyConfig) {
+  // Launch safety: never publish a live site with a dead signup form or no contact email.
+  if (site.live && process.env.LIVE !== "1") {
+    const missing = [!site.newsletterAction && "newsletterAction", !site.contactEmail && "contactEmail"].filter(Boolean);
+    if (missing.length) throw new Error("live: true but missing in src/_data/site.js: " + missing.join(", "));
+  }
+
   eleventyConfig.addPassthroughCopy({ "src/fonts": "fonts" });
   eleventyConfig.addPassthroughCopy({ "src/img": "img" });
   eleventyConfig.addPassthroughCopy({ "src/static": "/" });

@@ -33,61 +33,61 @@ eleventyComputed:
 <div>
 <p class="eye">Independent · Physician-reviewed</p>
 <h1>The AI tools worth a <i>doctor’s</i> time.</h1>
-<p class="lead">Every tool is tested hands-on and reviewed by a radiologist &amp; pathologist with 50+ years in practice. Honest verdicts. No paid rankings.</p>
+<p class="lead">Every verdict is reviewed by a radiologist &amp; pathologist with 50+ years in practice. Honest assessments. No paid rankings.</p>
 <div class="cta"><a class="btn p" href="/ai-scribes/">Find the best AI scribe <svg class="ic" aria-hidden="true"><use href="#arrow"/></svg></a><a class="btn s" href="/methodology/">How we review</a></div>
-<ul class="proof"><li><b>50+</b>years of clinical<br>practice behind every review</li><li><b>0</b>paid placements<br>in our rankings</li><li><b>5 min</b>to read any<br>verdict</li></ul>
+<ul class="proof"><li><b>50+</b>years of clinical<br>practice behind every review</li><li><b>0</b>paid placements<br>in our rankings</li><li><b>15</b>AI tools researched<br>so far</li></ul>
 </div>
 <div class="portrait">
-<img src="/img/gupta-portrait-800.webp" srcset="/img/gupta-portrait-480.webp 480w, /img/gupta-portrait-800.webp 800w" sizes="(max-width:760px) calc(100vw - 32px), 520px" width="800" height="1000" fetchpriority="high" decoding="async" alt="{{ site.editor.name }}, {{ site.editor.title }}, seated outdoors">
+<img src="/img/gupta-portrait-480.webp" srcset="/img/gupta-portrait-480.webp 480w, /img/gupta-portrait-640.webp 640w, /img/gupta-portrait-800.webp 800w" sizes="(max-width:760px) 270px, 520px" width="800" height="1000" fetchpriority="high" decoding="async" alt="{{ site.editor.name }}, {{ site.editor.title }}, seated outdoors">
 <div class="badge"><div class="seal"><svg width="24" height="24" aria-hidden="true"><use href="#check"/></svg></div><div><b>{{ site.editor.name }}, {{ site.editor.credentials }}</b><small>{{ site.editor.title }} · {{ site.editor.specialty }}<br>{{ site.editor.experience }}, India</small></div></div>
 </div>
 </section>
 </div>
 
 <div class="strip"><div class="w"><ul>
-<li><svg aria-hidden="true"><use href="#check"/></svg>Tested hands-on, not from press releases</li>
-<li><svg aria-hidden="true"><use href="#check"/></svg>HIPAA, GDPR &amp; data-privacy checked</li>
-<li><svg aria-hidden="true"><use href="#check"/></svg>Real pricing, no “contact sales” guesswork</li>
-<li><svg aria-hidden="true"><use href="#check"/></svg>Updated every quarter</li>
+<li><svg aria-hidden="true"><use href="#check"/></svg>Reviewed by a physician with 50+ years in practice</li>
+<li><svg aria-hidden="true"><use href="#check"/></svg>Vendor claims labelled as vendor claims</li>
+<li><svg aria-hidden="true"><use href="#check"/></svg>Real pricing, with the date we checked it</li>
+<li><svg aria-hidden="true"><use href="#check"/></svg>No pay-for-placement, ever</li>
 </ul></div></div>
 
 <section><div class="w">
-<div class="head"><div><p class="eye">Start here</p><h2>What do you want AI<br>to take off your plate?</h2></div><p>Pick your problem. We’ll show you the shortlist — and the one we’d choose.</p></div>
+<div class="head"><div><p class="eye">Start here</p><h2>What do you want AI<br>to take off your plate?</h2></div><p>Pick your problem and see the shortlist.</p></div>
 <ul class="pick">
 {% for a in home.areas %}<li><a class="pc{% if a.soon %} soon{% endif %}" href="{{ a.href }}"><span class="i"><svg aria-hidden="true"><use href="#{{ a.icon }}"/></svg></span><small>{{ a.meta }}</small><h3>{{ a.title }}</h3><p>{{ a.text }}</p><span class="go">{{ a.cta }} →</span></a></li>{% endfor %}
 </ul>
 </div></section>
 
 <section class="tight"><div class="w">
-<div class="head"><div><p class="eye">Our verdict · Updated Oct 2026</p><h2>Best AI medical scribes</h2></div><p>The three we’d recommend to a colleague today. Full testing notes in each review.</p></div>
+<div class="head"><div><p class="eye">Researched · Updated Oct 2026</p><h2>AI medical scribes, shortlisted</h2></div><p>Four of the eight we have researched. Tested verdicts and scores come after hands-on review.</p></div>
 <div class="picks">
-<div class="tr h" aria-hidden="true"><span>#</span><span>Tool</span><span>Best for</span><span>From</span><span>Score</span><span></span></div>
-<ol>
-{% for p in home.picks %}<li class="tr"><span class="rank">{{ p.rank }}</span><div class="tn"><b>{{ p.name }}</b>{% if p.badge %}<span class="chip">{{ p.badge }}</span>{% else %}<small>{{ p.note }}</small>{% endif %}</div><span class="hm">{{ p.bestFor }}</span><span class="hm">{{ p.from }}</span><span class="score">{{ p.score }}<small>/10</small></span><div class="acts"><a class="btn s" href="{{ p.review }}">Review</a><a class="btn t" href="{{ p.visit }}" rel="sponsored noopener" target="_blank">Visit site<span class="sr" style="position:absolute;left:-9999px"> (opens in new tab)</span></a></div></li>{% endfor %}
-</ol>
-<p class="disc">We may earn a commission if you sign up through our links. It never affects our scores — <a href="/disclosure/">how we stay independent</a>.</p>
+<div class="tr sl h" aria-hidden="true"><span>Tool</span><span>Built for</span><span>Markets</span><span>Status</span><span></span></div>
+<ul>
+{% for p in home.shortlist %}<li class="tr sl"><div class="tn"><b>{{ p.name }}</b><small>{{ p.from }}</small></div><span class="hm">{{ p.bestFor }}</span><span class="hm">{{ p.markets }}</span><span class="stt">Researched</span><div class="acts"><a class="btn s" href="/ai-scribes/#shortlist">Compare<span class="sr" style="position:absolute;left:-9999px"> {{ p.name }}</span></a></div></li>{% endfor %}
+</ul>
+<p class="disc">Prices change often; confirm on the vendor’s site. We may earn a commission on some links, which never affects our scores — <a href="/disclosure/">how we stay independent</a>.</p>
 </div>
 </div></section>
 
 <section class="tight"><div class="w"><div class="ed">
-<div class="img"><img src="/img/gupta-work-800.webp" srcset="/img/gupta-work-480.webp 480w, /img/gupta-work-800.webp 800w" sizes="(max-width:760px) calc(100vw - 32px), 480px" width="800" height="1000" loading="lazy" decoding="async" alt="{{ site.editor.name }} examining a slide under the microscope"></div>
-<div class="tx"><p class="eye">A note from our {{ site.editor.title }}</p>
-<blockquote>“I have watched medicine change for fifty years — from film to digital, from microscope to screen. AI is the biggest shift yet. My job is simple: <i>tell you which tools deserve your trust.</i>”</blockquote>
+<div class="img"><img src="/img/gupta-work-640.webp" srcset="/img/gupta-work-400.webp 400w, /img/gupta-work-640.webp 640w, /img/gupta-work-800.webp 800w" sizes="(max-width:760px) calc(100vw - 32px), 480px" width="800" height="1000" loading="lazy" decoding="async" alt="{{ site.editor.name }} examining a slide under the microscope"></div>
+<div class="tx"><p class="eye">Your {{ site.editor.title }}</p>
+{% if home.editorQuote %}<blockquote>“{{ home.editorQuote }}”</blockquote>{% else %}<blockquote>Fifty years of practice, <i>behind every verdict.</i></blockquote>{% endif %}
 <p class="sig">{{ site.editor.name }}</p><p class="cred">{{ site.editor.credentials }} · {{ site.editor.specialty }} · {{ site.editor.experience }}</p>
 <a class="btn s" href="/about/">Read his story</a></div>
 </div></div></section>
 
 <section class="tight"><div class="w">
-<div class="head"><div><p class="eye">How we review</p><h2>Four tests. No shortcuts.</h2></div><p>The same clinical rigour you’d apply to a new protocol.</p></div>
+<div class="head"><div><p class="eye">How we review</p><h2>Four stages. No shortcuts.</h2></div><p>The same clinical rigour you’d apply to a new protocol.</p></div>
 <ol class="steps">
 {% for s in home.steps %}<li class="st"><p class="n">0{{ loop.index }}</p><h3>{{ s.title }}</h3><p>{{ s.text }}</p></li>{% endfor %}
 </ol>
 </div></section>
 
 <section class="tight"><div class="w">
-<div class="head"><div><p class="eye">Latest reviews &amp; guides</p><h2>Read in five minutes.</h2></div><a class="btn s" href="/ai-scribes/">All reviews</a></div>
+<div class="head"><div><p class="eye">Guides &amp; shortlists</p><h2>Start reading.</h2></div><a class="btn s" href="/ai-scribes/">All AI scribes</a></div>
 <ul class="cards">
-{% for a in home.articles %}<li><a class="cd" href="{{ a.href }}"><div class="im {{ a.tone }}" role="img" aria-label="Article image"></div><span class="tag">{{ a.tag }}</span><h3>{{ a.title }}</h3><p>{{ a.min }} min read · Reviewed by {{ site.editor.name }}</p></a></li>{% endfor %}
+{% for a in home.articles %}<li><a class="cd" href="{{ a.href }}"><div class="im {{ a.tone }}" role="img" aria-label="Article image"></div><span class="tag">{{ a.tag }}</span><h3>{{ a.title }}</h3><p>{{ a.meta }}</p></a></li>{% endfor %}
 </ul>
 </div></section>
 

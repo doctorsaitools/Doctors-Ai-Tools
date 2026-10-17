@@ -1,11 +1,11 @@
 ---
 layout: page.njk
 title: "Privacy Policy — Doctors AI Tools"
-description: "What data Doctors AI Tools collects, why, and your rights."
+description: "What data Doctors AI Tools collects, why, who processes it, and your rights."
 crumb: "Privacy"
 eyebrow: "Legal"
 heading: "Privacy policy."
-intro: "Short and plain: what we collect and why."
+intro: "Short and plain: what we collect, why, and your choices."
 eleventyComputed:
   schema:
     "@context": "https://schema.org"
@@ -15,20 +15,39 @@ eleventyComputed:
     isPartOf:
       "@id": "https://doctorsaitools.com/#site"
 ---
-<p class="status"><b>Draft:</b> this policy should be checked by a qualified adviser before launch.</p>
+{% if not site.live %}<p class="status"><b>Not final:</b> before launch, add the legal name and postal address of the site operator (below) and have a qualified adviser check this page.</p>{% endif %}
+
+<h2 id="who">Who we are</h2>
+<p>Doctors AI Tools (doctorsaitools.com) is an independent information site run from India. Questions about your data: <a href="/contact/">contact us</a>{% if site.contactEmail %} at <a href="mailto:{{ site.contactEmail }}">{{ site.contactEmail }}</a>{% endif %}.</p>
 
 <h2 id="collect">What we collect</h2>
 <ul>
-<li><strong>Email address</strong>, only if you subscribe to our newsletter. It is stored with our email provider, MailerLite, and used to send the briefing.</li>
-<li><strong>Anonymous visit statistics</strong> through Cloudflare Web Analytics, which does not use cookies or track you across sites.</li>
-<li><strong>Your theme choice</strong> (light or dark), saved in your browser only. It is not sent to us.</li>
+<li><strong>Email address</strong>, only if you subscribe to our newsletter. We use it to send the monthly briefing. Legal basis: your consent, which you can withdraw at any time.</li>
+<li><strong>Anonymous visit statistics</strong> (pages viewed, country, browser type) through Cloudflare Web Analytics. It does not use cookies and does not track you across sites. Legal basis: our legitimate interest in understanding how the site is used.</li>
+<li><strong>Your theme choice</strong> (light or dark), saved in your browser only. It is never sent to us.</li>
 </ul>
-<p>We do not ask for patient information, and you should never send any to us.</p>
+<p>We do not ask for patient information. Please never send any to us.</p>
 
-<h2 id="affiliate">Affiliate links</h2>
-<p>When you click an affiliate link, the vendor may set its own cookies. Check their privacy policy. See the <a href="/disclosure/">affiliate disclosure</a>.</p>
+<h2 id="processors">Who handles your data</h2>
+<ul>
+<li><strong>MailerLite</strong> stores newsletter email addresses and sends our emails.</li>
+<li><strong>Cloudflare</strong> delivers anonymous statistics.</li>
+<li><strong>GitHub</strong> hosts the site files and serves the pages, and may process technical data such as your IP address when you visit.</li>
+</ul>
+<p>These providers may process data outside your country, including in the United States and the European Union. We do not sell your data.</p>
+
+<h2 id="affiliate">Affiliate links and third-party sites</h2>
+<p>Some links go to vendors’ sites. If you click an affiliate link, the vendor or its affiliate network may set cookies to record the referral. We do not control those cookies; check the vendor’s privacy policy. See the <a href="/disclosure/">affiliate disclosure</a>.</p>
+
+<h2 id="keep">How long we keep it</h2>
+<p>Newsletter addresses are kept until you unsubscribe, then deleted or suppressed so we do not email you again. Analytics are anonymous and aggregated.</p>
 
 <h2 id="rights">Your rights</h2>
-<p>You can unsubscribe at any time from any email. To ask for access to, correction of or deletion of your data, <a href="/contact/">contact us</a>. You may also have rights under laws such as UK GDPR, the Australian Privacy Act or Canadian privacy law.</p>
+<p>Depending on where you live (for example under UK GDPR, the EU GDPR, Canadian privacy law, the Australian Privacy Act or India’s Digital Personal Data Protection Act), you may be able to ask for access to, correction of or deletion of your data, and to withdraw consent. <a href="/contact/">Contact us</a> and we will respond. You may also complain to your local data protection authority.</p>
 
+<h2 id="children">Children</h2>
+<p>This site is written for healthcare professionals and is not directed at children.</p>
+
+<h2 id="changes">Changes</h2>
+<p>If we change how we use data, we will update this page and its date.</p>
 <p>Last updated: 17 October 2026.</p>
