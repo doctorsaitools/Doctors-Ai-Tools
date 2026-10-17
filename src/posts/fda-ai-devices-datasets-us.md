@@ -130,7 +130,7 @@ Other regulators publish different lists. Australia's TGA lists AI-enabled devic
 
 - [FDA: Artificial Intelligence-Enabled Medical Devices](https://www.fda.gov/medical-devices/software-medical-device-samd/artificial-intelligence-enabled-medical-devices), CSV downloaded 17 Oct 2026
 - [FDA: FDA authorizes software that can help identify prostate cancer](https://www.fda.gov/news-events/press-announcements/fda-authorizes-software-can-help-identify-prostate-cancer), 21 September 2021
-- [TGA: AI-enabled medical devices in the ARTG](https://www.tga.gov.au/products/medical-devices/software-and-artificial-intelligence/manufacturing/artificial-intelligence-ai-and-medical-device-software/ai-enabled-medical-devices-artg)
+- [TGA: AI-enabled medical devices in the ARTG](https://www.tga.gov.au/products/medical-devices/software-and-artificial-intelligence-ai/manufacturing/artificial-intelligence-ai-and-medical-device-software/ai-enabled-medical-devices-artg)
 - [Health Canada: Medical Devices Active Licence Listing](https://www.canada.ca/en/health-canada/services/drugs-health-products/medical-devices/licences/medical-devices-active-licence-listing.html)
 - [MHRA: Public Access Registration Database](https://pard.mhra.gov.uk/)
 - [Hardian Health: How many AI-enabled medical devices are approved for use in the UK?](https://www.hardianhealth.com/insights/how-many-ai-enabled-medical-devices-are-approved-for-use-in-the-uk)
