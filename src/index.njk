@@ -87,7 +87,7 @@ eleventyComputed:
 <section class="tight"><div class="w">
 <div class="head"><div><p class="eye">Guides &amp; shortlists</p><h2>Start reading.</h2></div><a class="btn s" href="/ai-scribes/">All AI scribes</a></div>
 <ul class="cards">
-{% for a in home.articles %}<li><a class="cd" href="{{ a.href }}"><div class="im {{ a.tone }}" role="img" aria-label="Article image"></div><span class="tag">{{ a.tag }}</span><h3>{{ a.title }}</h3><p>{{ a.meta }}</p></a></li>{% endfor %}
+{% for a in home.articles %}<li><a class="cd" href="{{ a.href }}">{% if a.cover %}<img class="im" src="{{ a.cover }}" width="800" height="500" alt="" loading="lazy" decoding="async">{% else %}<div class="im {{ a.tone }}" role="img" aria-label="Article image"></div>{% endif %}<span class="tag">{{ a.tag }}</span><h3>{{ a.title }}</h3><p>{{ a.meta }}</p></a></li>{% endfor %}
 </ul>
 </div></section>
 
