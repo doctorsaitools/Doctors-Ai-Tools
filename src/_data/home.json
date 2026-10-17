@@ -29,6 +29,8 @@
     {
       "icon": "flask",
       "meta": "Coming soon",
+      "img": "area-pathology",
+      "alt": "Illustration of virus particles under magnification",
       "title": "Pathology & lab",
       "text": "Digital pathology and slide-analysis tools.",
       "cta": "Notify me",
