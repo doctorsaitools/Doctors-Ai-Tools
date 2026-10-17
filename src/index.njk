@@ -59,14 +59,10 @@ eleventyComputed:
 </div></section>
 
 <section class="tight"><div class="w">
-<div class="head"><div><p class="eye">Researched · Updated Oct 2026</p><h2>AI medical scribes, shortlisted</h2></div><p>Four of the eight we have researched. Tested verdicts and scores come after hands-on review.</p></div>
-<div class="picks">
-<div class="tr sl h" aria-hidden="true"><span>Tool</span><span>Built for</span><span>Markets</span><span>Status</span><span></span></div>
-<ul>
-{% for p in home.shortlist %}<li class="tr sl"><div class="tn"><b>{{ p.name }}</b><small>{{ p.from }}</small></div><span class="hm">{{ p.bestFor }}</span><span class="hm">{{ p.markets }}</span><span class="stt">Researched</span><div class="acts"><a class="btn s" href="/ai-scribes/#shortlist">Compare<span class="sr" style="position:absolute;left:-9999px"> {{ p.name }}</span></a></div></li>{% endfor %}
+<div class="head"><div><p class="eye">Latest</p><h2>Latest reviews and guides</h2></div><p>New from all three areas: scribes, radiology and pathology.</p></div>
+<ul class="cards">
+{% for p in collections.posts | head(6) %}{% if not p.data.sample %}<li><a class="cd" href="{{ p.url }}"><div class="im {{ p.data.tone or 'a' }}" role="img" aria-label="Article image"></div><span class="tag">{{ p.data.category }} · {{ p.data.type | capitalize }}</span><h3>{{ p.data.title }}</h3><p>{{ p.templateContent | readTime }} min read · Updated {{ (p.data.updated or p.data.date) | dateShort }}</p></a></li>{% endif %}{% endfor %}
 </ul>
-<p class="disc">Prices change often; confirm on the vendor’s site. We may earn a commission on some links, which never affects our scores — <a href="/disclosure/">how we stay independent</a>.</p>
-</div>
 </div></section>
 
 <section class="tight"><div class="w"><div class="ed">
