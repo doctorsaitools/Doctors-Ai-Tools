@@ -1,0 +1,14 @@
+phrase,role,mentions_in_all_returned_studies,mentions_in_counted_studies
+artificial intelligence,counts a study,3482,3482
+machine learning,counts a study,2001,2001
+deep learning,counts a study,863,860
+natural language processing,counts a study,104,104
+large language model,counts a study,236,236
+generative AI,counts a study,56,56
+ChatGPT,counts a study,143,143
+"qualified neural network (convolutional, deep, artificial, recurrent or graph neural network)",counts a study,222,222
+neural network,counts only with a core phrase,622,302
+computer vision,counts only with a core phrase,159,54
+reinforcement learning,counts only with a core phrase,137,13
+computer-aided detection,counts only with a core phrase,90,36
+computer-aided diagnosis,counts only with a core phrase,76,49

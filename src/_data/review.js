@@ -6,5 +6,6 @@ export default {
     { n: 3, title: "How Radiology AI Works: Triage, Detection and Reporting", url: "/radiology-ai/how-radiology-ai-works/", what: "What radiology AI does, what FDA clearance means, and its limits. Please check this one closely." },
     { n: 4, title: "How Digital Pathology AI Works: From Glass Slide to Algorithm", url: "/pathology-ai/how-digital-pathology-ai-works/", what: "How a slide becomes an image and what AI does with it. Please check this one closely." },
     { n: 5, title: "NHS Guidance on AI Scribes, Explained for GPs", url: "/ai-scribes/nhs-ambient-voice-technology-guidance/", what: "A summary of NHS England's rules for using AI scribes in general practice." },
+    { n: 6, title: "AI Clinical Trials by Country: 5,818 Studies in Data", url: "/ai-clinical-trials-by-country-datasets/", what: "Six datasets from ClinicalTrials.gov on studies that mention AI, for ten countries. Please check the counting rules closely." },
   ],
 };

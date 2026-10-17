@@ -349,3 +349,6 @@ footer{padding:64px 0 40px;font-size:15px}
 .ds-src{border-left:3px solid var(--gold);padding:4px 0 4px 16px;font-size:15.5px;color:var(--muted)}
 .prose td.n,.prose th.n{text-align:right;font-variant-numeric:tabular-nums}
 @media (max-width:560px){.ds-bars li{grid-template-columns:minmax(0,1fr) 3em}.ds-bars .t{grid-column:1/-1;grid-row:2}}
+.ds-wide table{font-size:14.5px}
+.ds-wide th,.ds-wide td{padding:10px 8px}
+.ds-wide th{font-size:11px;letter-spacing:.05em}
