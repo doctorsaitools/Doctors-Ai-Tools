@@ -6,14 +6,13 @@ type: guide
 keyword: fda ai enabled medical devices list
 date: 2026-10-17
 updated: 2026-10-17
-reviewed: false
-preview: true
-reviewedOn:
+reviewed: true
+reviewedOn: 2026-10-17
 tone: b
 ---
 The FDA publishes a list of medical devices it has authorized that use artificial intelligence. We downloaded it and turned it into five small datasets you can read here and download as CSV files. Nothing in them is estimated: every figure is a count of rows in the FDA file, or a percentage worked out from those counts.
 
-**Status: data from the FDA list, not yet reviewed by Dr. Gupta.** The file we used has 1,614 devices with decision dates from 29 September 1995 to 29 June 2026. We downloaded it on 17 October 2026. A later download will have more rows, and totals quoted elsewhere (for example the 1,430 devices to December 2025 in our [radiology guide](/radiology-ai/how-radiology-ai-works/)) will differ, because they come from a different source and cut-off date.
+**Status: data from the FDA list, reviewed by Dr. Gupta.** The file we used has 1,614 devices with decision dates from 29 September 1995 to 29 June 2026. We downloaded it on 17 October 2026. A later download will have more rows, and totals quoted elsewhere (for example the 1,430 devices to December 2025 in our [radiology guide](/radiology-ai/how-radiology-ai-works/)) will differ, because they come from a different source and cut-off date.
 
 ## How to read these numbers
 
@@ -120,7 +119,7 @@ Pathology AI devices can also sit under other panels, such as Radiology or Clini
 
 Look up the exact submission number on the FDA's own database and read the stated indication before you buy. Then ask the vendor for performance on patients like yours. The clinician stays responsible for every result. Our [radiology AI guide](/radiology-ai/how-radiology-ai-works/) explains what clearance does and does not tell you.
 
-<div class="callout"><b>Dr. Gupta's note.</b> Dr. Gupta's note will appear here after his review.</div>
+<div class="callout"><b>Dr. Gupta's note.</b> I have read this page. It counts entries on the FDA's list of AI-enabled devices. It does not show how well any device works. FDA authorisation means a device met the agency's requirements for sale. It is not proof that it improves patient care. The review panel is the FDA's own sorting, not a clinical specialty, so please read those counts as a guide only. Use this page to see where approvals are going, and check a specific product's evidence before you rely on it.</div>
 
 ## Outside the US
 

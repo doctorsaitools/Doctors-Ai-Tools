@@ -6,14 +6,13 @@ type: guide
 keyword: ai enabled medical devices artg
 date: 2026-10-17
 updated: 2026-10-17
-reviewed: false
-preview: true
-reviewedOn:
+reviewed: true
+reviewedOn: 2026-10-17
 tone: c
 ---
 The Therapeutic Goods Administration (TGA) publishes a list of medical devices on the Australian Register of Therapeutic Goods (ARTG) that use artificial intelligence or machine learning. We took the version dated 10 September 2026 and turned it into five small datasets you can read here and download as CSV files. Every figure is a count of entries in the TGA list, or a percentage worked out from those counts.
 
-**Status: data from the TGA list, not yet reviewed by Dr. Gupta.** The list has 100 entries. We copied the table on 17 October 2026. The TGA replaces the table from time to time, so a later version will differ.
+**Status: data from the TGA list, reviewed by Dr. Gupta.** The list has 100 entries. We copied the table on 17 October 2026. The TGA replaces the table from time to time, so a later version will differ.
 
 ## How to read these numbers
 
@@ -121,7 +120,7 @@ Several vendors we cover do not appear in this version of the list, including Vi
 
 Look up the ARTG ID on the TGA's site and read the intended purpose. Then ask the vendor for performance on patients like yours. The clinician stays responsible for every result. Our [radiology AI guide](/radiology-ai/how-radiology-ai-works/) and [digital pathology guide](/pathology-ai/how-digital-pathology-ai-works/) explain what a regulatory listing does and does not tell you.
 
-<div class="callout"><b>Dr. Gupta's note.</b> Dr. Gupta's note will appear here after his review.</div>
+<div class="callout"><b>Dr. Gupta's note.</b> I have read this page. It counts entries on the TGA's list of AI-enabled devices in the ARTG. Being on the register means a device is legally supplied in Australia. It does not tell you how accurate it is or whether it suits your practice. The TGA says its list is incomplete, so a product missing from this page may still be registered. Check the register entry and the vendor's evidence before you choose a tool.</div>
 
 ## Outside Australia
 
