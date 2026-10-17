@@ -1,0 +1,63 @@
+---
+layout: internal.njk
+title: "Review hub"
+description: "Private page for reviewing draft articles."
+eyebrow: "For Dr. Ravi Shankar Gupta · private"
+heading: "Review hub"
+intro: "Everything you need to review the draft articles is on this page and the pages it links to. You do not need Claude or any chat window."
+noindex: true
+---
+<p class="status"><b>Private page.</b> It is not listed on Google and is not in the website menu. It will be removed before the website opens to the public.</p>
+
+<h2 id="how">How to review</h2>
+<ol>
+<li><strong>Open an article</strong> from the list below and read it on your phone or computer.</li>
+<li><strong>Write your changes on paper.</strong> Use the <a href="/review/sheets/">printable review sheets</a> or any plain paper. Write the article number and the heading of each section you want changed.</li>
+<li><strong>Take a clear photo of each page</strong> and send the photos to the site owner. The changes are made on the website, and you can read the article again here.</li>
+</ol>
+
+<h2 id="articles">The 5 draft articles</h2>
+<p>Each one shows a “Draft preview” banner at the top. Nothing here is published yet.</p>
+<ol>
+{% for a in review.articles %}<li><strong>Article {{ a.n }}.</strong> <a href="{{ a.url }}">{{ a.title }}</a><br>{{ a.what }}</li>
+{% endfor %}</ol>
+
+<h2 id="look-for">What to look for</h2>
+<ul>
+<li>Is anything medically wrong, out of date or misleading?</li>
+<li>Is anything missing that a doctor would expect to see?</li>
+<li>Is it clear for a busy doctor, or too basic, or too technical?</li>
+<li>Does any sentence claim more than we can prove? Every article should say “researched, not yet tested” and show no score.</li>
+<li>Is it fair about risks, patient consent and who is responsible for the final decision?</li>
+<li>Your own note: two or three sentences, in your own words, on one point most reviews miss. Nobody else writes this.</li>
+</ul>
+
+<h2 id="status">Where the project stands</h2>
+<p><strong>Done:</strong></p>
+<ul>
+<li>The website is built and online as a private preview.</li>
+<li>A plan for 100 articles is ready: 33 on AI scribes, 33 on radiology AI, 33 on pathology AI, and one overview guide.</li>
+<li>These 5 articles are written as drafts. Every tool in them is “researched, not yet tested”.</li>
+</ul>
+<p><strong>Not done yet:</strong></p>
+<ul>
+<li>Your review of any article, and your note in each one.</li>
+<li>The other 95 articles.</li>
+<li>The newsletter form and visitor statistics are not connected.</li>
+<li>The Pathology AI page has no tool list yet.</li>
+<li>No referral partnerships are signed, so tool links go to each company's own website.</li>
+<li>No tool has been tested by us, so no tool has a score.</li>
+</ul>
+
+<h2 id="plan">The plan</h2>
+<ol>
+<li>You review these 5 articles and send corrections.</li>
+<li>The other 95 drafts are written to the same rules.</li>
+<li>Every fact is checked against its source, and the articles are linked to each other.</li>
+<li>You review each article and add your own note, 10 a day.</li>
+<li>The newsletter form and visitor statistics are connected, and the Pathology AI tool list is written.</li>
+<li>The website is opened to Google. This is launch day.</li>
+<li>10 reviewed articles are published each day for 10 days, each dated the day it goes live.</li>
+<li>We apply to each tool's referral programme and swap in the referral links once approved.</li>
+<li>You start testing tools. A tool gets a score only after you have tested it.</li>
+</ol>

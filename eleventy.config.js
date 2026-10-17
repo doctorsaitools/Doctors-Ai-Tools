@@ -14,6 +14,7 @@ export default function (eleventyConfig) {
   if (site.live || process.env.CHECK_REVIEWED === "1") {
     const dir = "src/posts";
     const bad = [];
+    if (fs.existsSync("src/review")) bad.push("src/review: private review pages must be removed before launch");
     for (const f of fs.readdirSync(dir).filter((x) => x.endsWith(".md"))) {
       const raw = fs.readFileSync(`${dir}/${f}`, "utf8");
       if (/^sample:\s*true/m.test(raw)) continue;

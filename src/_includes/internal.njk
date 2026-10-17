@@ -1,0 +1,11 @@
+---
+layout: base.njk
+---
+<div class="w hub">
+<header class="hub-head">
+<p class="eye">{{ eyebrow }}</p>
+<h1>{{ heading }}</h1>
+{% if intro %}<p class="lead">{{ intro }}</p>{% endif %}
+</header>
+<div class="prose hub-body">{{ content | safe }}</div>
+</div>

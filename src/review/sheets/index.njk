@@ -1,0 +1,50 @@
+---
+layout: internal.njk
+title: "Review sheets"
+description: "Printable review sheets for the draft articles."
+eyebrow: "For Dr. Ravi Shankar Gupta · private"
+heading: "Review sheets"
+intro: "Print this page: Ctrl+P on a computer, or Share then Print on a phone. There is one sheet for each article. Write on the sheet, then photograph it."
+noindex: true
+---
+<style>
+.sheet{border:1px solid var(--line);border-radius:14px;padding:28px;margin-top:32px;font-size:17px;line-height:1.5}
+.sheet h2{margin-top:0;font-size:24px}
+.sheet h3{font:600 16px/1.3 var(--sans);margin-top:22px}
+.sheet .meta{font-size:14px;color:var(--muted);overflow-wrap:anywhere}
+.ticks{width:100%;border-collapse:collapse;margin-top:14px;display:table;font-size:17px}
+.ticks td{padding:9px 6px;border-bottom:1px solid var(--line);vertical-align:middle}
+.box{display:inline-block;width:18px;height:18px;border:2px solid var(--ink);border-radius:3px;vertical-align:-3px;margin:0 6px 0 14px}
+.box:first-child{margin-left:0}
+.ln{height:40px;border-bottom:1px solid var(--muted)}
+.sign{margin-top:26px}
+@media print{
+  @page{size:A4;margin:14mm}
+  html,body{background:#fff !important;color:#000 !important}
+  .skip,header,footer,.hub-head,.noprint{display:none !important}
+  .w{max-width:none;padding:0}
+  .sheet{border:0;padding:0;margin:0;break-after:page;page-break-after:always;font-size:12.5pt}
+  .sheet:last-child{break-after:auto;page-break-after:auto}
+  .sheet h2{font-size:17pt}
+  .ln{height:10.5mm;border-bottom:1px solid #000}
+  .box{border-color:#000}
+  .sheet .meta{color:#000}
+}
+</style>
+<p class="noprint"><a href="/review/">Back to the review hub</a></p>
+{% for a in review.articles %}
+<section class="sheet">
+<h2>Article {{ a.n }}: {{ a.title }}</h2>
+<p class="meta">Read it at: https://doctorsaitools.com{{ a.url }}</p>
+<table class="ticks">
+<tr><td>Medically accurate?</td><td><span class="box"></span>Yes <span class="box"></span>Needs changes (see below)</td></tr>
+<tr><td>Clear for a busy doctor?</td><td><span class="box"></span>Yes <span class="box"></span>Too basic <span class="box"></span>Too technical</td></tr>
+<tr><td>Anything missing?</td><td><span class="box"></span>No <span class="box"></span>Yes (see below)</td></tr>
+</table>
+<h3>Changes. Write the section heading, then what to change.</h3>
+{% for i in range(0, 8) %}<div class="ln"></div>{% endfor %}
+<h3>Your note for readers. Two or three sentences, in your own words.</h3>
+{% for i in range(0, 4) %}<div class="ln"></div>{% endfor %}
+<p class="sign">Approved to publish: <span class="box"></span>Yes <span class="box"></span>After the changes <span class="box"></span>No &nbsp;&nbsp; Signed: ____________ &nbsp; Date: ________</p>
+</section>
+{% endfor %}
