@@ -37,8 +37,8 @@ eleventyComputed:
 <div class="cta"><a class="btn p" href="/ai-scribes/">Find the best AI scribe <svg class="ic" aria-hidden="true"><use href="#arrow"/></svg></a><a class="btn s" href="/methodology/">How we review</a></div>
 <ul class="proof"><li><b>50+</b>years of clinical<br>practice behind every review</li><li><b>0</b>paid placements<br>in our rankings</li><li><b>5 min</b>to read any<br>verdict</li></ul>
 </div>
-<div class="portrait" role="img" aria-label="Portrait of {{ site.editor.name }}, {{ site.editor.title }}">
-{% if ph %}<span class="ph">PHOTO · PORTRAIT</span>{% endif %}
+<div class="portrait">
+<img src="/img/gupta-portrait-800.webp" srcset="/img/gupta-portrait-480.webp 480w, /img/gupta-portrait-800.webp 800w" sizes="(max-width:760px) calc(100vw - 32px), 520px" width="800" height="1000" fetchpriority="high" decoding="async" alt="{{ site.editor.name }}, {{ site.editor.title }}, seated outdoors">
 <div class="badge"><div class="seal"><svg width="24" height="24" aria-hidden="true"><use href="#check"/></svg></div><div><b>{{ site.editor.name }}, {{ site.editor.credentials }}</b><small>{{ site.editor.title }} · {{ site.editor.specialty }}<br>{{ site.editor.experience }}, India</small></div></div>
 </div>
 </section>
@@ -70,7 +70,7 @@ eleventyComputed:
 </div></section>
 
 <section class="tight"><div class="w"><div class="ed">
-<div class="img" role="img" aria-label="{{ site.editor.name }} at work">{% if ph %}<span class="ph">PHOTO · AT WORK</span>{% endif %}</div>
+<div class="img"><img src="/img/gupta-work-800.webp" srcset="/img/gupta-work-480.webp 480w, /img/gupta-work-800.webp 800w" sizes="(max-width:760px) calc(100vw - 32px), 480px" width="800" height="1000" loading="lazy" decoding="async" alt="{{ site.editor.name }} examining a slide under the microscope"></div>
 <div class="tx"><p class="eye">A note from our {{ site.editor.title }}</p>
 <blockquote>“I have watched medicine change for fifty years — from film to digital, from microscope to screen. AI is the biggest shift yet. My job is simple: <i>tell you which tools deserve your trust.</i>”</blockquote>
 <p class="sig">{{ site.editor.name }}</p><p class="cred">{{ site.editor.credentials }} · {{ site.editor.specialty }} · {{ site.editor.experience }}</p>
