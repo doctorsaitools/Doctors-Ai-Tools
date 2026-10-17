@@ -34,7 +34,7 @@ eleventyComputed:
 <p class="eye">Independent · Physician-reviewed</p>
 <h1>The AI tools worth a <i>doctor’s</i> time.</h1>
 <p class="lead">Every verdict is reviewed by a radiologist &amp; pathologist with 50+ years in practice. Honest assessments. No paid rankings.</p>
-<div class="cta"><a class="btn p" href="/ai-scribes/">Find the best AI scribe <svg class="ic" aria-hidden="true"><use href="#arrow"/></svg></a><a class="btn s" href="/methodology/">How we review</a></div>
+<div class="cta"><a class="btn p" href="#latest">Browse latest reviews <svg class="ic" aria-hidden="true"><use href="#arrow"/></svg></a><a class="btn s" href="/methodology/">How we review</a></div>
 <ul class="proof"><li><b>50+</b>years of clinical<br>practice behind every review</li><li><b>0</b>paid placements<br>in our rankings</li><li><b>15</b>AI tools researched<br>so far</li></ul>
 </div>
 <div class="portrait">
@@ -51,7 +51,7 @@ eleventyComputed:
 <li><svg aria-hidden="true"><use href="#check"/></svg>No pay-for-placement, ever</li>
 </ul></div></div>
 
-<div class="w cta-m"><div class="cta"><a class="btn p" href="/ai-scribes/">Find the best AI scribe <svg class="ic" aria-hidden="true"><use href="#arrow"/></svg></a><a class="btn s" href="/methodology/">How we review</a></div></div>
+<div class="w cta-m"><div class="cta"><a class="btn p" href="#latest">Browse latest reviews <svg class="ic" aria-hidden="true"><use href="#arrow"/></svg></a><a class="btn s" href="/methodology/">How we review</a></div></div>
 
 <section><div class="w">
 <div class="head"><div><p class="eye">Start here</p><h2>What do you want AI<br>to take off your plate?</h2></div><p>Pick your problem and see the shortlist.</p></div>
@@ -60,7 +60,7 @@ eleventyComputed:
 </ul>
 </div></section>
 
-<section class="tight"><div class="w">
+<section class="tight" id="latest"><div class="w">
 <div class="head"><div><p class="eye">Latest</p><h2>Latest reviews and guides</h2></div><p>New from all three areas: scribes, radiology and pathology.</p></div>
 <ul class="cards">
 {% for p in collections.posts | head(6) %}{% if not p.data.sample %}<li><a class="cd" href="{{ p.url }}"><div class="im {{ p.data.tone or 'a' }}" role="img" aria-label="Article image"></div><span class="tag">{{ p.data.category }} · {{ p.data.type | capitalize }}</span><h3>{{ p.data.title }}</h3><p>{{ p.templateContent | readTime }} min read · Updated {{ (p.data.updated or p.data.date) | dateShort }}</p></a></li>{% endif %}{% endfor %}
