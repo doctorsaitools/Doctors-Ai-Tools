@@ -28,14 +28,13 @@
     },
     {
       "icon": "flask",
-      "meta": "Coming soon",
+      "meta": "9 tools researched",
       "img": "area-pathology",
       "alt": "Illustration of virus particles under magnification",
       "title": "Pathology & lab",
       "text": "Digital pathology and slide-analysis tools.",
-      "cta": "Notify me",
-      "href": "#briefing",
-      "soon": true
+      "cta": "See the shortlist",
+      "href": "/pathology-ai/"
     }
   ],
   "shortlist": [
