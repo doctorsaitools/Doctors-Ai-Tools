@@ -4,8 +4,8 @@ description: "Four downloadable datasets from Japan's official table of approved
 category: Guides
 type: guide
 keyword: japan approved ai medical devices
-date: 2026-10-18
-updated: 2026-10-18
+date: 2026-10-19
+updated: 2026-10-19
 reviewed: true
 reviewedOn: 2026-10-18
 tone: c
@@ -114,7 +114,7 @@ If a product you are considering is not in this table, that does not mean it is 
 
 ## Outside Japan
 
-We have built the same kind of datasets for the [United States](/united-states-fda-ai-devices-datasets/) and [Australia](/australia-tga-ai-devices-datasets/). Totals are not comparable across countries: each regulator decides differently what goes on its list. For how image-reading AI works in general, see [how radiology AI works](/radiology-ai/how-radiology-ai-works/).
+We have built the same kind of datasets for the [United States](/united-states-fda-ai-devices-datasets/) and [Australia](/australia-tga-ai-devices-datasets/). Totals are not comparable across countries: each regulator decides differently what goes on its list.
 
 ## Sources
 

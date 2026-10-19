@@ -4,8 +4,8 @@ description: "Five downloadable datasets from the TGA's list of AI-enabled devic
 category: Guides
 type: guide
 keyword: ai enabled medical devices artg
-date: 2026-10-17
-updated: 2026-10-17
+date: 2026-10-19
+updated: 2026-10-19
 reviewed: true
 reviewedOn: 2026-10-17
 tone: c
@@ -118,7 +118,7 @@ Several vendors we cover do not appear in this version of the list, including Vi
 
 ## Using this when you evaluate a tool
 
-Look up the ARTG ID on the TGA's site and read the intended purpose. Then ask the vendor for performance on patients like yours. The clinician stays responsible for every result. Our [radiology AI guide](/radiology-ai/how-radiology-ai-works/) and [digital pathology guide](/pathology-ai/how-digital-pathology-ai-works/) explain what a regulatory listing does and does not tell you.
+Look up the ARTG ID on the TGA's site and read the intended purpose. Then ask the vendor for performance on patients like yours. The clinician stays responsible for every result.
 
 <div class="callout"><b>Dr. Gupta's note.</b> I have read this page. It counts entries on the TGA's list of AI-enabled devices in the ARTG. Being on the register means a device is legally supplied in Australia. It does not tell you how accurate it is or whether it suits your practice. The TGA says its list is incomplete, so a product missing from this page may still be registered. Check the register entry and the vendor's evidence before you choose a tool.</div>
 

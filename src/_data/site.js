@@ -20,11 +20,11 @@ export default {
   description:
     "Independent, hands-on reviews of AI tools for doctors — AI medical scribes, radiology AI and more — each reviewed by a radiologist and pathologist with 50+ years in practice.",
   // Flip to true on launch day, once real reviews, photos and partners replace the sample content.
-  live: process.env.LIVE === "1" || false,
+  live: true,
   // Paste the MailerLite embedded-form action URL here (Forms → Embedded form → copy the form 'action').
   // Public contact email shown on /contact/ (leave empty until ready).
   contactEmail: "editor@doctorsaitools.com",
-  newsletterAction: "",
+  newsletterAction: "https://assets.mailerlite.com/jsonp/2724252/forms/201745508203496595/subscribe",
   // Cloudflare Web Analytics token (leave empty to disable).
   cfAnalyticsToken: "",
   editor: {

@@ -4,8 +4,8 @@ description: "Five downloadable datasets from Germany's official DiGA directory:
 category: Guides
 type: guide
 keyword: diga directory germany list
-date: 2026-10-18
-updated: 2026-10-18
+date: 2026-10-19
+updated: 2026-10-19
 reviewed: true
 reviewedOn: 2026-10-18
 tone: c
