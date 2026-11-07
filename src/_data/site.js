@@ -27,6 +27,8 @@ export default {
   newsletterAction: "https://assets.mailerlite.com/jsonp/2724252/forms/201745508203496595/subscribe",
   // Cloudflare Web Analytics token (leave empty to disable).
   cfAnalyticsToken: "",
+  // Google Analytics 4 measurement ID, like G-XXXXXXXXXX (leave empty to disable).
+  gaMeasurementId: "G-XVYSR23QKM",
   editor: {
     name: "Dr. Ravi Shankar Gupta",
     credentials: "DMRE, DCP, FAGS",

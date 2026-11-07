@@ -74,6 +74,7 @@
 </div>
 </footer>
 <script>document.getElementById("tt").addEventListener("click",function(){var d=document.documentElement,c=d.getAttribute("data-theme")||(matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light"),n=c==="dark"?"light":"dark";d.setAttribute("data-theme",n);try{localStorage.setItem("theme",n)}catch(e){}})</script>
+{% if site.gaMeasurementId %}<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","{{ site.gaMeasurementId }}",{anonymize_ip:true});addEventListener("load",function(){setTimeout(function(){var s=document.createElement("script");s.async=true;s.src="https://www.googletagmanager.com/gtag/js?id={{ site.gaMeasurementId }}";document.head.appendChild(s)},1500)})</script>{% endif %}
 {% if site.cfAnalyticsToken %}<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"{{ site.cfAnalyticsToken }}"}'></script>{% endif %}
 </body>
 </html>

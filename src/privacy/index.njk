@@ -23,7 +23,7 @@ eleventyComputed:
 <h2 id="collect">What we collect</h2>
 <ul>
 <li><strong>Email address</strong>, only if you subscribe to our newsletter. We use it to send the monthly briefing. Legal basis: your consent, which you can withdraw at any time.</li>
-<li><strong>Anonymous visit statistics</strong> (pages viewed, country, browser type) through Cloudflare Web Analytics. It does not use cookies and does not track you across sites. Legal basis: our legitimate interest in understanding how the site is used.</li>
+{% if site.gaMeasurementId %}<li><strong>Visit statistics</strong> (pages viewed, country, device and browser type) through Google Analytics. It sets cookies to tell visits apart, and we ask Google to shorten IP addresses. We do not use it for advertising. Legal basis: our legitimate interest in understanding how the site is used. You can block it with your browser settings or Google’s <a href="https://tools.google.com/dlpage/gaoptout" rel="noopener">opt-out add-on</a>.</li>{% else %}<li><strong>Anonymous visit statistics</strong> (pages viewed, country, browser type) through Cloudflare Web Analytics. It does not use cookies and does not track you across sites. Legal basis: our legitimate interest in understanding how the site is used.</li>{% endif %}
 <li><strong>Your theme choice</strong> (light or dark), saved in your browser only. It is never sent to us.</li>
 </ul>
 <p>We do not ask for patient information. Please never send any to us.</p>
@@ -31,7 +31,7 @@ eleventyComputed:
 <h2 id="processors">Who handles your data</h2>
 <ul>
 <li><strong>MailerLite</strong> stores newsletter email addresses and sends our emails.</li>
-<li><strong>Cloudflare</strong> delivers anonymous statistics.</li>
+{% if site.gaMeasurementId %}<li><strong>Google</strong> provides our visit statistics (Google Analytics).</li>{% else %}<li><strong>Cloudflare</strong> delivers anonymous statistics.</li>{% endif %}
 <li><strong>GitHub</strong> hosts the site files and serves the pages, and may process technical data such as your IP address when you visit.</li>
 </ul>
 <p>These providers may process data outside your country, including in the United States and the European Union. We do not sell your data.</p>
