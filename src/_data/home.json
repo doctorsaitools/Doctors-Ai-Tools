@@ -70,7 +70,7 @@
     },
     {
       "title": "Hands-on testing",
-      "text": "Each tool is used on realistic clinical scenarios, never on real patient data."
+      "text": "Each tool is used on realistic clinical scenarios, never on real patient data. Testing is in progress; no tool is scored until it is done."
     },
     {
       "title": "Privacy & safety",

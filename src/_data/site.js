@@ -18,7 +18,7 @@ export default {
   url: "https://doctorsaitools.com",
   tagline: "Physician-reviewed AI tools for clinicians",
   description:
-    "Independent, hands-on reviews of AI tools for doctors — AI medical scribes, radiology AI and more — each reviewed by a radiologist and pathologist with 50+ years in practice.",
+    "Independent shortlists and data guides on AI tools for doctors — AI medical scribes, radiology AI and pathology AI — edited by a radiologist and pathologist with 50+ years in practice.",
   // Flip to true on launch day, once real reviews, photos and partners replace the sample content.
   live: true,
   // Paste the MailerLite embedded-form action URL here (Forms → Embedded form → copy the form 'action').
